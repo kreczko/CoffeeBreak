@@ -5,87 +5,46 @@ Created on Mar 5, 2011
 '''
 
 from ROOT import *
-
-class Event:
-    def __init__(self, eventNumber, run, lumisection):
-        self.number = eventNumber
-        self.run = run
-        self.lumiSection = lumisection
-        
-        self.electrons = []
-    
-    def json(self):
-        js = {'run':self.run, 'event': self.number, 'lumiSection': self.lumiSection}
-        jsElectrons = []
-        app = jsElectrons.append
-        for electron in self.electrons:
-            app(electron.json())
-        js['electrons'] = jsElectrons
-        return js
-    
-class Particle:
-    def __init__(self, energy, px, py, pz):
-        self.energy = energy
-        self.px = px
-        self.py = py
-        self.pz = pz
-        
-        self.mass = 0
-        self.charge = 0
-        
-    def json(self):
-        js = {'energy': self.energy, 'px':self.px, 'py':self.py, 'pz':self.pz}
-        js['mass'] = self.mass
-        js['charge'] = self.charge
-        return js
-        
-class Electron(Particle):
-    def __init__(self, energy, px, py, pz):
-        Particle.__init__(self, energy, px, py, pz)
-        
-        self.d0 = 0
-        
-    def json(self):
-        js = Particle.json(self)
-        js['d0'] = self.d0
-        return js
-
-
+from testDict import addMultiVarToEvent, addSimpleMultiVarToEvent
+from couch.Couch import CouchServer
 
 if __name__ == '__main__':
     gROOT.SetBatch(1);
     chain = TChain("rootTupleTree/tree");
 
     chain.Add("/storage/TopQuarkGroup/mc/fall10_7TeV_v1_e25skim/TTJets_TuneD6T_7TeV-madgraph-tauola_Fall10-START38_V12-v2/nTuple_ttjet_merged_1.root");
-    chain.SetBranchStatus("*", 0);
+    chain.SetBranchStatus("*", 1);
 
-    chain.SetBranchStatus("Electron.Energy", 1);
-#    chain.SetBranchStatus("els_px", 1);
-#    chain.SetBranchStatus("els_py", 1);
-#    chain.SetBranchStatus("els_pz", 1);
-    chain.SetBranchStatus("run", 1);
-#    chain.SetBranchStatus("lumiBlock", 1);
-#    chain.SetBranchStatus("event", 1);
-#    chain.SetBranchStatus("Nels", 1);
+    vars = [branch.GetName() for branch in chain.GetListOfBranches()]
+  
+    counter = 1
     
-    print chain.GetEntries()
-    events = []
-    app = events.append
-    chain.Print()
-#    for event in chain:
-##        pass
-##        print event.__getattr__('run')
-#        print len(event.__getattr__('Electron.Energy'))
-#        print len(event.Electron.Energy())
-#        #print event.Electron.Energy
-#        ev = Event(event.event, event.run, event.lumiBlock)
-#        for electron in range(0, event.Nels):
-#            ev.electrons.append(Electron(event.els_energy[electron], event.els_px[electron], event.els_py[electron], event.els_pz[electron]))
-#        app(ev)
+    db = CouchServer().connectDatabase('my_analysis')
     
-#    i = 0
-#    for event in events:
-#        if i> 10:
-#            break;
-#        i+= 1
-#        print event.json()
+    for event in chain:
+        myevent = {}
+        for var in vars:
+            value = event.__getattr__(var)
+            if '.' in var and not 'bool' in str(value):
+                addMultiVarToEvent(myevent, var, value)
+                
+#            if var == 'Vertex.IsFake':
+#                print var
+#                if value.size() > 0:
+#                    print value.size()
+#                    
+#                    print value.begin()
+#                print '\n'.join(dir(value))
+#                print value.pop_back()
+#                print value.size()
+#                help(value)
+                
+        db.queue(myevent)
+        if counter % 10 == 0:
+            print counter, ' events done'
+            db.commit()
+        counter += 1
+
+
+    db.commit()
+    print "I've done something!"
