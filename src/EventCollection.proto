@@ -1,0 +1,101 @@
+package HEP;
+
+message FourVector {
+required double energy = 1;
+required double px = 2;
+required double py = 3;
+required double pz = 4;
+}
+
+message Particle {
+required FourVector fourVector = 1;
+required double charge = 2;
+required double mass = 3;
+}
+
+message Jet {
+	required Particle basic = 1;
+
+	enum JetAlgorithm {
+		Calo_AntiKT_Cone05 = 0;
+		CA08PF = 1;
+		PF2PAT = 2;
+ 	}
+
+	optional JetAlgorithm type = 2 [default = PF2PAT];
+	optional double electromagneticFraction = 3 [default = 0];
+	optional double numberOfRecHitsContaining90PercentOfTheJetEnergy = 4 [default = 0];
+	optional double fractionOfEnergyIntheHottestHPDReadout = 5 [default = 0];
+	optional uint32 numberOfDaughters = 6 [default = 0];
+	optional double chargedEmEnergyFraction = 7 [default = 1];
+	optional double neutralHadronEnergyFraction = 8 [default = 1];
+	optional double neutralEmEnergyFraction = 9 [default = 1];
+	optional double chargedHadronEnergyFraction = 10 [default = 1];
+	optional uint32 chargedMultiplicity = 11 [default = 0];
+  }
+
+message Electron {
+	required Particle basic = 1;
+	enum ElectronAlgorithm {
+		Calo = 0;
+		ParticleFlow = 1;
+ 	}
+	optional ElectronAlgorithm type = 2 [default = ParticleFlow];
+	required double superCluser_Eta = 3;
+	//detector isolation
+	optional double ecal_Isolation = 4;
+	optional double hcal_Isolation = 5;
+	optional double tracker_Isolation = 6;
+	
+	optional double innerLayerMissingHits = 7;
+	// simple cut based ID variables
+	optional double sigma_IEtaIEta = 8;
+	optional double dPhi_In = 9;
+	optional double dEta_In = 10;
+	optional double hadOverEm = 11;
+	optional uint32 CiCElectronIDCompressed = 12;
+	optional double sharedFractionInnerHits = 13;
+	optional double zDistanceToPrimaryVertex = 14;
+	optional double dCotThetaToNextTrack = 15;
+	optional double distToNextTrack = 16;
+	optional double PFGamma_Isolation = 17;
+	optional double PFChargedHadron_Isolation = 18;
+	optional double PFNeutralHadron_Isolation = 19;
+	
+	
+}
+
+message Muon {
+
+}
+
+message MET {
+	required Particle basic = 1;
+}
+
+message Vertex {
+	required bool is_fake = 1;
+	required uint32 degreesOfFreedom = 2;
+	required double z_position = 3;
+	required double rho = 4;
+}
+
+message Event {
+  repeated Jet CaloJets = 1;
+  repeated Jet PF2PATJets = 2;
+  repeated Jet CA08PFJets = 3;
+  
+  repeated Electron CaloElectrons = 4;
+  repeated Electron PFElectrons = 5;
+  required MET met = 6;
+  repeated Vertex vertices = 7;
+  
+  required uint32 run = 8;
+  required uint32 lumi = 9;
+  required uint32 number = 10;
+  optional bool isData = 11;
+}
+
+message EventCollection {
+  repeated Event event = 1;
+}
