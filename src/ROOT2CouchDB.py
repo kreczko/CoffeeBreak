@@ -3,7 +3,7 @@ Created on Mar 5, 2011
 
 @author: lkreczko
 '''
-
+from __future__ import division
 from ROOT import *
 from testDict import addMultiVarToEvent, addSimpleMultiVarToEvent
 from couch.Couch import CouchServer
@@ -16,33 +16,42 @@ if __name__ == '__main__':
     chain.SetBranchStatus("*", 1);
 
     vars = [branch.GetName() for branch in chain.GetListOfBranches()]
-  
+    
+    newvars = []
+    for var in vars:
+        if 'PFElectron' in var:
+            newvars.append(var)
+        if 'PF2PATJet' in var:
+            newvars.append(var)
+        if 'PFMET' in var:
+            newvars.append(var)
+        if 'Vertex.' in var:
+            newvars.append(var)
+        if 'HLTResult' in var:
+            newvars.append(var)  
+    vars = newvars
+    print vars
     counter = 1
+    start = 180
+    db = CouchServer().connectDatabase('ttbar')
+    totalEvents = chain.GetEntries()
+    print 'Total number of events', totalEvents
     
-    db = CouchServer().connectDatabase('my_analysis')
-    
+    queue = db.queue
     for event in chain:
         myevent = {}
+        getVar = event.__getattr__
         for var in vars:
-            value = event.__getattr__(var)
+            value = getVar(var)
             if '.' in var and not 'bool' in str(value):
                 addMultiVarToEvent(myevent, var, value)
+            elif not '.' in var:
+                addSimpleMultiVarToEvent(myevent, var, value)
                 
-#            if var == 'Vertex.IsFake':
-#                print var
-#                if value.size() > 0:
-#                    print value.size()
-#                    
-#                    print value.begin()
-#                print '\n'.join(dir(value))
-#                print value.pop_back()
-#                print value.size()
-#                help(value)
-                
-        db.queue(myevent)
-        if counter % 10 == 0:
-            print counter, ' events done'
-            db.commit()
+        queue(myevent, viewlist=['analysis/pf_e_count_cut30'])
+        if counter % 1000 == 0:
+#                db.commit()
+            print counter, ' events done (%f.2' % counter/totalEvents*100 , '%)'
         counter += 1
 
 
