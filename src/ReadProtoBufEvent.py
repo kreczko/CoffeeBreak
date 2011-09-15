@@ -22,6 +22,9 @@ def ListJets(jets):
         print '   px:', jet.basic.fourVector.px
         print '   py:', jet.basic.fourVector.py
         print '   pz:', jet.basic.fourVector.pz
+        print '   charge:', jet.basic.charge
+        print '   mass:', jet.basic.mass
+        print '   ChargedMultiplicity:', jet.ChargedMultiplicity
       
 if __name__ == '__main__':
     parser = OptionParser()

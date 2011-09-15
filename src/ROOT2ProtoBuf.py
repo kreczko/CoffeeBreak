@@ -13,18 +13,47 @@ import EventCollection_pb2
 def fillElectron(electron, data, index):
     pass
 
-def fillJet(jet, data,prefix, index):
+def fillJet(jet, data, prefix, index):
     getVar = data.__getattr__
-    energy = getVar('goodPatJets.Energy')[index]
-    px = getVar('goodPatJets.Px')[index]
-    py = getVar('goodPatJets.Py')[index]
-    pz = getVar('goodPatJets.Pz')[index]
+    energy = getVar(prefix + '.Energy')[index]
+    px = getVar(prefix + '.Px')[index]
+    py = getVar(prefix + '.Py')[index]
+    pz = getVar(prefix + '.Pz')[index]
     
     fourVector = jet.basic.fourVector
     fourVector.energy = energy
     fourVector.px = px
     fourVector.py = py
     fourVector.pz = pz
+    
+    jet.basic.charge = getVar(prefix + '.Charge')[index]
+    jet.basic.mass = getVar(prefix + '.Mass')[index]
+    if prefix == 'goodPatJets':
+        jet.type = EventCollection_pb2.Jet.Calo_AntiKT_Cone05
+        
+    if prefix == 'goodPatJetsCA8PF':
+        jet.type = EventCollection_pb2.Jet.CA08PF
+        
+    if prefix == 'goodPatJetsPFlow':
+        jet.type = EventCollection_pb2.Jet.PF2PAT
+        
+    variables = ['Eta', 'Phi', 'Pt', 'PtRaw', 'EnergyRaw', 'PartonFlavour', 'JECUnc', 'L2L3ResJEC', 'L3AbsJEC', 
+                 'L2RelJEC', 'L1OffJEC', 'EMF', 'resEMF', 'HADF', 'n90Hits', 'fHPD', 'fRBX', 'SigmaEta', 'SigmaPhi', 'TrackCountingHighEffBTag', 
+                 'TrackCountingHighPurBTag', 'SimpleSecondaryVertexHighEffBTag', 'SimpleSecondaryVertexHighPurBTag', 'JetProbabilityBTag', 
+                 'JetBProbabilityBTag', 'SoftElectronBJetTag', 'SoftMuonBJetTag', 'SoftMuonNoIPBJetTag', 'CombinedSVBJetTag', 'CombinedSVMVABJetTag', 
+                 'PassLooseID', 'ChargedEmEnergyFraction', 'ChargedHadronEnergyFraction', 'ChargedMuEnergyFraction', 'ElectronEnergyFraction', 
+                 'MuonEnergyFraction', 'NeutralEmEnergyFraction', 'NeutralHadronEnergyFraction', 'PhotonEnergyFraction', 
+                 'ChargedHadronMultiplicity', 'ChargedMultiplicity', 'ElectronMultiplicity', 'MuonMultiplicity', 'NeutralHadronMultiplicity', 
+                 'NeutralMultiplicity', 'PhotonMultiplicity', 'NConstituents', 'ChargedEmEnergyFractionRAW', 'ChargedHadronEnergyFractionRAW', 
+                 'NeutralEmEnergyFractionRAW', 'NeutralHadronEnergyFractionRAW']
+    
+    setVar = jet.__setattr__
+    for var in variables:
+        if hasattr(data, var):
+            setVar(var, getVar(var)[index])
+            
+        
+    
 
 def fillVertex(vertex, data, index):
     pass
