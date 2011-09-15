@@ -7,11 +7,10 @@ from google.protobuf import descriptor_pb2
 # @@protoc_insertion_point(imports)
 
 
-
 DESCRIPTOR = descriptor.FileDescriptor(
   name='EventCollection.proto',
   package='HEP',
-  serialized_pb='\n\x15\x45ventCollection.proto\x12\x03HEP\"@\n\nFourVector\x12\x0e\n\x06\x65nergy\x18\x01 \x02(\x01\x12\n\n\x02px\x18\x02 \x02(\x01\x12\n\n\x02py\x18\x03 \x02(\x01\x12\n\n\x02pz\x18\x04 \x02(\x01\"M\n\x08Particle\x12#\n\nfourVector\x18\x01 \x02(\x0b\x32\x0f.HEP.FourVector\x12\x0e\n\x06\x63harge\x18\x02 \x02(\x01\x12\x0c\n\x04mass\x18\x03 \x02(\x01\"\xfa\x03\n\x03Jet\x12\x1c\n\x05\x62\x61sic\x18\x01 \x02(\x0b\x32\r.HEP.Particle\x12+\n\x04type\x18\x02 \x01(\x0e\x32\x15.HEP.Jet.JetAlgorithm:\x06PF2PAT\x12\"\n\x17\x65lectromagneticFraction\x18\x03 \x01(\x01:\x01\x30\x12;\n0numberOfRecHitsContaining90PercentOfTheJetEnergy\x18\x04 \x01(\x01:\x01\x30\x12\x31\n&fractionOfEnergyIntheHottestHPDReadout\x18\x05 \x01(\x01:\x01\x30\x12\x1c\n\x11numberOfDaughters\x18\x06 \x01(\r:\x01\x30\x12\"\n\x17\x63hargedEmEnergyFraction\x18\x07 \x01(\x01:\x01\x31\x12&\n\x1bneutralHadronEnergyFraction\x18\x08 \x01(\x01:\x01\x31\x12\"\n\x17neutralEmEnergyFraction\x18\t \x01(\x01:\x01\x31\x12&\n\x1b\x63hargedHadronEnergyFraction\x18\n \x01(\x01:\x01\x31\x12\x1e\n\x13\x63hargedMultiplicity\x18\x0b \x01(\r:\x01\x30\">\n\x0cJetAlgorithm\x12\x16\n\x12\x43\x61lo_AntiKT_Cone05\x10\x00\x12\n\n\x06\x43\x41\x30\x38PF\x10\x01\x12\n\n\x06PF2PAT\x10\x02\"\xe2\x04\n\x08\x45lectron\x12\x1c\n\x05\x62\x61sic\x18\x01 \x02(\x0b\x32\r.HEP.Particle\x12;\n\x04type\x18\x02 \x01(\x0e\x32\x1f.HEP.Electron.ElectronAlgorithm:\x0cParticleFlow\x12\x17\n\x0fsuperCluser_Eta\x18\x03 \x02(\x01\x12\x16\n\x0e\x65\x63\x61l_Isolation\x18\x04 \x01(\x01\x12\x16\n\x0ehcal_Isolation\x18\x05 \x01(\x01\x12\x19\n\x11tracker_Isolation\x18\x06 \x01(\x01\x12\x1d\n\x15innerLayerMissingHits\x18\x07 \x01(\x01\x12\x16\n\x0esigma_IEtaIEta\x18\x08 \x01(\x01\x12\x0f\n\x07\x64Phi_In\x18\t \x01(\x01\x12\x0f\n\x07\x64\x45ta_In\x18\n \x01(\x01\x12\x11\n\thadOverEm\x18\x0b \x01(\x01\x12\x1f\n\x17\x43iCElectronIDCompressed\x18\x0c \x01(\r\x12\x1f\n\x17sharedFractionInnerHits\x18\r \x01(\x01\x12 \n\x18zDistanceToPrimaryVertex\x18\x0e \x01(\x01\x12\x1c\n\x14\x64\x43otThetaToNextTrack\x18\x0f \x01(\x01\x12\x17\n\x0f\x64istToNextTrack\x18\x10 \x01(\x01\x12\x19\n\x11PFGamma_Isolation\x18\x11 \x01(\x01\x12!\n\x19PFChargedHadron_Isolation\x18\x12 \x01(\x01\x12!\n\x19PFNeutralHadron_Isolation\x18\x13 \x01(\x01\"/\n\x11\x45lectronAlgorithm\x12\x08\n\x04\x43\x61lo\x10\x00\x12\x10\n\x0cParticleFlow\x10\x01\"\x06\n\x04Muon\"#\n\x03MET\x12\x1c\n\x05\x62\x61sic\x18\x01 \x02(\x0b\x32\r.HEP.Particle\"T\n\x06Vertex\x12\x0f\n\x07is_fake\x18\x01 \x02(\x08\x12\x18\n\x10\x64\x65greesOfFreedom\x18\x02 \x02(\r\x12\x12\n\nz_position\x18\x03 \x02(\x01\x12\x0b\n\x03rho\x18\x04 \x02(\x01\"\xa2\x01\n\x05\x45vent\x12\x0b\n\x03run\x18\x01 \x02(\r\x12\x0c\n\x04lumi\x18\x02 \x02(\r\x12\x0e\n\x06number\x18\x03 \x01(\r\x12\x16\n\x04jets\x18\x04 \x03(\x0b\x32\x08.HEP.Jet\x12 \n\telectrons\x18\x05 \x03(\x0b\x32\r.HEP.Electron\x12\x15\n\x03met\x18\x06 \x02(\x0b\x32\x08.HEP.MET\x12\x1d\n\x08vertices\x18\x07 \x03(\x0b\x32\x0b.HEP.Vertex\",\n\x0f\x45ventCollection\x12\x19\n\x05\x65vent\x18\x01 \x03(\x0b\x32\n.HEP.Event')
+  serialized_pb='\n\x15\x45ventCollection.proto\x12\x03HEP\"L\n\nFourVector\x12\x11\n\x06\x65nergy\x18\x01 \x01(\x01:\x01\x30\x12\r\n\x02px\x18\x02 \x01(\x01:\x01\x30\x12\r\n\x02py\x18\x03 \x01(\x01:\x01\x30\x12\r\n\x02pz\x18\x04 \x01(\x01:\x01\x30\"S\n\x08Particle\x12#\n\nfourVector\x18\x01 \x02(\x0b\x32\x0f.HEP.FourVector\x12\x11\n\x06\x63harge\x18\x02 \x01(\x01:\x01\x30\x12\x0f\n\x04mass\x18\x03 \x01(\x01:\x01\x30\"\xf2\x0c\n\x03Jet\x12\x1c\n\x05\x62\x61sic\x18\x01 \x02(\x0b\x32\r.HEP.Particle\x12+\n\x04type\x18\x02 \x01(\x0e\x32\x15.HEP.Jet.JetAlgorithm:\x06PF2PAT\x12\x0e\n\x03\x45ta\x18\x03 \x01(\x01:\x01\x30\x12\x0e\n\x03Phi\x18\x04 \x01(\x01:\x01\x30\x12\r\n\x02Pt\x18\x05 \x01(\x01:\x01\x30\x12\x10\n\x05PtRaw\x18\x06 \x01(\x01:\x01\x30\x12\x14\n\tEnergyRaw\x18\x07 \x01(\x01:\x01\x30\x12\x18\n\rPartonFlavour\x18\x08 \x01(\x05:\x01\x30\x12\x11\n\x06JECUnc\x18\t \x01(\x01:\x01\x30\x12\x15\n\nL2L3ResJEC\x18\n \x01(\x01:\x01\x30\x12\x13\n\x08L3AbsJEC\x18\x0b \x01(\x01:\x01\x30\x12\x13\n\x08L2RelJEC\x18\x0c \x01(\x01:\x01\x30\x12\x13\n\x08L1OffJEC\x18\r \x01(\x01:\x01\x30\x12\x0e\n\x03\x45MF\x18\x0e \x01(\x01:\x01\x30\x12\x11\n\x06resEMF\x18\x0f \x01(\x01:\x01\x30\x12\x0f\n\x04HADF\x18\x10 \x01(\x01:\x01\x30\x12\x12\n\x07n90Hits\x18\x11 \x01(\x05:\x01\x30\x12\x0f\n\x04\x66HPD\x18\x12 \x01(\x01:\x01\x30\x12\x0f\n\x04\x66RBX\x18\x13 \x01(\x01:\x01\x30\x12\x13\n\x08SigmaEta\x18\x14 \x01(\x01:\x01\x30\x12\x13\n\x08SigmaPhi\x18\x15 \x01(\x01:\x01\x30\x12#\n\x18TrackCountingHighEffBTag\x18\x16 \x01(\x01:\x01\x30\x12#\n\x18TrackCountingHighPurBTag\x18\x17 \x01(\x01:\x01\x30\x12+\n SimpleSecondaryVertexHighEffBTag\x18\x18 \x01(\x01:\x01\x30\x12+\n SimpleSecondaryVertexHighPurBTag\x18\x19 \x01(\x01:\x01\x30\x12\x1d\n\x12JetProbabilityBTag\x18\x1a \x01(\x01:\x01\x30\x12\x1e\n\x13JetBProbabilityBTag\x18\x1b \x01(\x01:\x01\x30\x12\x1e\n\x13SoftElectronBJetTag\x18\x1c \x01(\x01:\x01\x30\x12\x1a\n\x0fSoftMuonBJetTag\x18\x1d \x01(\x01:\x01\x30\x12\x1e\n\x13SoftMuonNoIPBJetTag\x18\x1e \x01(\x01:\x01\x30\x12\x1c\n\x11\x43ombinedSVBJetTag\x18\x1f \x01(\x01:\x01\x30\x12\x1f\n\x14\x43ombinedSVMVABJetTag\x18  \x01(\x01:\x01\x30\x12\x16\n\x0bPassLooseID\x18! \x01(\x05:\x01\x30\x12\x16\n\x0bPassTightID\x18\" \x01(\x05:\x01\x30\x12\"\n\x17\x43hargedEmEnergyFraction\x18# \x01(\x01:\x01\x30\x12&\n\x1b\x43hargedHadronEnergyFraction\x18$ \x01(\x01:\x01\x30\x12\"\n\x17\x43hargedMuEnergyFraction\x18% \x01(\x01:\x01\x30\x12!\n\x16\x45lectronEnergyFraction\x18& \x01(\x01:\x01\x30\x12\x1d\n\x12MuonEnergyFraction\x18\' \x01(\x01:\x01\x30\x12\"\n\x17NeutralEmEnergyFraction\x18( \x01(\x01:\x01\x30\x12&\n\x1bNeutralHadronEnergyFraction\x18) \x01(\x01:\x01\x30\x12\x1f\n\x14PhotonEnergyFraction\x18* \x01(\x01:\x01\x30\x12$\n\x19\x43hargedHadronMultiplicity\x18+ \x01(\x05:\x01\x30\x12\x1e\n\x13\x43hargedMultiplicity\x18, \x01(\x05:\x01\x30\x12\x1f\n\x14\x45lectronMultiplicity\x18- \x01(\x05:\x01\x30\x12\x1b\n\x10MuonMultiplicity\x18. \x01(\x05:\x01\x30\x12$\n\x19NeutralHadronMultiplicity\x18/ \x01(\x05:\x01\x30\x12\x1e\n\x13NeutralMultiplicity\x18\x30 \x01(\x05:\x01\x30\x12\x1d\n\x12PhotonMultiplicity\x18\x31 \x01(\x05:\x01\x30\x12\x18\n\rNConstituents\x18\x32 \x01(\x05:\x01\x30\x12%\n\x1a\x43hargedEmEnergyFractionRAW\x18\x33 \x01(\x01:\x01\x30\x12)\n\x1e\x43hargedHadronEnergyFractionRAW\x18\x34 \x01(\x01:\x01\x30\x12%\n\x1aNeutralEmEnergyFractionRAW\x18\x35 \x01(\x01:\x01\x30\x12)\n\x1eNeutralHadronEnergyFractionRAW\x18\x36 \x01(\x01:\x01\x30\">\n\x0cJetAlgorithm\x12\x16\n\x12\x43\x61lo_AntiKT_Cone05\x10\x00\x12\n\n\x06\x43\x41\x30\x38PF\x10\x01\x12\n\n\x06PF2PAT\x10\x02\"v\n\x06GenJet\x12\x1c\n\x05\x62\x61sic\x18\x01 \x02(\x0b\x32\r.HEP.Particle\x12\x0e\n\x03\x45ta\x18\x02 \x01(\x01:\x01\x30\x12\x0e\n\x03Phi\x18\x03 \x01(\x01:\x01\x30\x12\r\n\x02Pt\x18\x04 \x01(\x01:\x01\x30\x12\x0e\n\x03\x45MF\x18\x05 \x01(\x01:\x01\x30\x12\x0f\n\x04HADF\x18\x06 \x01(\x01:\x01\x30\"\xda\x01\n\x0bGenParticle\x12\x1c\n\x05\x62\x61sic\x18\x01 \x02(\x0b\x32\r.HEP.Particle\x12\x0e\n\x03\x45ta\x18\x02 \x01(\x01:\x01\x30\x12\x0e\n\x03Phi\x18\x03 \x01(\x01:\x01\x30\x12\r\n\x02Pt\x18\x04 \x01(\x01:\x01\x30\x12\x10\n\x05PdgId\x18\x05 \x01(\x05:\x01\x30\x12\r\n\x02VX\x18\x06 \x01(\x01:\x01\x30\x12\r\n\x02VY\x18\x07 \x01(\x01:\x01\x30\x12\r\n\x02VZ\x18\x08 \x01(\x01:\x01\x30\x12\x14\n\tNumDaught\x18\t \x01(\x05:\x01\x30\x12\x11\n\x06Status\x18\n \x01(\x05:\x01\x30\x12\x16\n\x0bMotherIndex\x18\x0b \x01(\x05:\x01\x30\"\xda\t\n\x08\x45lectron\x12\x1c\n\x05\x62\x61sic\x18\x01 \x02(\x0b\x32\r.HEP.Particle\x12;\n\x04type\x18\x02 \x01(\x0e\x32\x1f.HEP.Electron.ElectronAlgorithm:\x0cParticleFlow\x12\x0e\n\x03\x45ta\x18\x03 \x01(\x01:\x01\x30\x12\x0e\n\x03Phi\x18\x04 \x01(\x01:\x01\x30\x12\r\n\x02Pt\x18\x05 \x01(\x01:\x01\x30\x12\x11\n\x06\x45nergy\x18\x06 \x01(\x01:\x01\x30\x12\x15\n\nCaloEnergy\x18\x07 \x01(\x01:\x01\x30\x12\x0e\n\x03HoE\x18\x08 \x01(\x01:\x01\x30\x12\x1f\n\x14\x65SeedClusterOverPout\x18. \x01(\x01:\x01\x30\x12\x11\n\x06\x45overP\x18\t \x01(\x01:\x01\x30\x12\x10\n\x05\x66\x62rem\x18\n \x01(\x01:\x01\x30\x12\x16\n\x0bSigmaEtaEta\x18\x0b \x01(\x01:\x01\x30\x12\x18\n\rSigmaIEtaIEta\x18\x0c \x01(\x01:\x01\x30\x12\x18\n\rDeltaPhiTrkSC\x18\r \x01(\x01:\x01\x30\x12\x18\n\rDeltaEtaTrkSC\x18\x0e \x01(\x01:\x01\x30\x12\x13\n\x08TrkIso03\x18\x0f \x01(\x01:\x01\x30\x12\x14\n\tEcalIso03\x18\x10 \x01(\x01:\x01\x30\x12\x14\n\tHcalIso03\x18\x11 \x01(\x01:\x01\x30\x12\x11\n\x06TrkIso\x18\x12 \x01(\x01:\x01\x30\x12\x12\n\x07\x45\x63\x61lIso\x18\x13 \x01(\x01:\x01\x30\x12\x12\n\x07HcalIso\x18\x14 \x01(\x01:\x01\x30\x12\r\n\x02\x64\x42\x18\x15 \x01(\x01:\x01\x30\x12\x1d\n\x12\x63losestCtfTrackRef\x18\x16 \x01(\x05:\x01\x30\x12\x1a\n\x0fshFracInnerHits\x18\x17 \x01(\x01:\x01\x30\x12%\n\x05track\x18\x18 \x01(\x0b\x32\x16.HEP.Electron.GSFTrack\x12\x16\n\x0b\x45\x63\x61lIsoHeep\x18\x19 \x01(\x01:\x01\x30\x12\x18\n\rHcalIsoD1Heep\x18\x1a \x01(\x01:\x01\x30\x12\x18\n\rHcalIsoD2Heep\x18\x1b \x01(\x01:\x01\x30\x12\x15\n\nTrkIsoHeep\x18\x1c \x01(\x01:\x01\x30\x12\x16\n\x0bMissingHits\x18\x1d \x01(\x05:\x01\x30\x12\x0f\n\x04\x44ist\x18\x1e \x01(\x01:\x01\x30\x12\x14\n\tDCotTheta\x18\x1f \x01(\x01:\x01\x30\x12\x10\n\x05SCEta\x18  \x01(\x01:\x01\x30\x12\x10\n\x05SCPhi\x18! \x01(\x01:\x01\x30\x12\x0f\n\x04SCPt\x18\" \x01(\x01:\x01\x30\x12\x16\n\x0bSCRawEnergy\x18# \x01(\x01:\x01\x30\x12\x13\n\x08VtxIndex\x18$ \x01(\x05:\x01\x30\x12\x14\n\tVtxDistXY\x18% \x01(\x01:\x01\x30\x12\x13\n\x08VtxDistZ\x18& \x01(\x01:\x01\x30\x12\x12\n\x07VertexX\x18\' \x01(\x01:\x01\x30\x12\x12\n\x07VertexY\x18( \x01(\x01:\x01\x30\x12\x12\n\x07VertexZ\x18) \x01(\x01:\x01\x30\x12\x11\n\x06PassID\x18* \x01(\x05:\x01\x30\x12\x1d\n\x12PfChargedHadronIso\x18+ \x01(\x01:\x01\x30\x12\x1d\n\x12PfNeutralHadronIso\x18, \x01(\x01:\x01\x30\x12\x15\n\nPFGammaIso\x18- \x01(\x01:\x01\x30\x1am\n\x08GSFTrack\x12\r\n\x02\x64\x30\x18\x01 \x01(\x01:\x01\x30\x12\x0e\n\x03\x45ta\x18\x02 \x01(\x01:\x01\x30\x12\x0e\n\x03Phi\x18\x03 \x01(\x01:\x01\x30\x12\x10\n\x05Theta\x18\x04 \x01(\x01:\x01\x30\x12\x11\n\x06\x43harge\x18\x05 \x01(\x05:\x01\x30\x12\r\n\x02Pt\x18\x06 \x01(\x01:\x01\x30\"/\n\x11\x45lectronAlgorithm\x12\x08\n\x04\x43\x61lo\x10\x00\x12\x10\n\x0cParticleFlow\x10\x01\"\xc3\x06\n\x04Muon\x12\x1c\n\x05\x62\x61sic\x18\x01 \x02(\x0b\x32\r.HEP.Particle\x12\x13\n\x08TrkIso03\x18\x02 \x01(\x01:\x01\x30\x12\x14\n\tEcalIso03\x18\x03 \x01(\x01:\x01\x30\x12\x14\n\tHcalIso03\x18\x04 \x01(\x01:\x01\x30\x12\x1b\n\x10isGoodGlobalMuon\x18\x05 \x01(\x05:\x01\x30\x12\x1d\n\x12PfChargedHadronIso\x18\x06 \x01(\x01:\x01\x30\x12\x1d\n\x12PfNeutralHadronIso\x18\x07 \x01(\x01:\x01\x30\x12\x15\n\nPFGammaIso\x18\x08 \x01(\x01:\x01\x30\x12\x0e\n\x03\x45ta\x18\t \x01(\x01:\x01\x30\x12\x0e\n\x03Phi\x18\n \x01(\x01:\x01\x30\x12\r\n\x02Pt\x18\x0b \x01(\x01:\x01\x30\x12\x0c\n\x01P\x18\x0c \x01(\x01:\x01\x30\x12\x12\n\x07TrkHits\x18\r \x01(\x05:\x01\x30\x12\x10\n\x05TrkD0\x18\x0e \x01(\x01:\x01\x30\x12\x15\n\nTrkD0Error\x18\x0f \x01(\x01:\x01\x30\x12\x10\n\x05TrkDz\x18\x10 \x01(\x01:\x01\x30\x12\x15\n\nTrkDzError\x18\x11 \x01(\x01:\x01\x30\x12\x15\n\nGlobalChi2\x18\x12 \x01(\x01:\x01\x30\x12\x11\n\x06TrkIso\x18\x13 \x01(\x01:\x01\x30\x12\x12\n\x07\x45\x63\x61lIso\x18\x14 \x01(\x01:\x01\x30\x12\x12\n\x07HcalIso\x18\x15 \x01(\x01:\x01\x30\x12\x10\n\x05HOIso\x18\x16 \x01(\x01:\x01\x30\x12\x13\n\x08VtxIndex\x18\x17 \x01(\x05:\x01\x30\x12\x14\n\tVtxDistXY\x18\x18 \x01(\x01:\x01\x30\x12\x13\n\x08VtxDistZ\x18\x19 \x01(\x01:\x01\x30\x12\x16\n\x0b\x43ocktailEta\x18\x1a \x01(\x01:\x01\x30\x12\x16\n\x0b\x43ocktailPhi\x18\x1b \x01(\x01:\x01\x30\x12\x15\n\nCocktailPt\x18\x1c \x01(\x01:\x01\x30\x12\x14\n\tCocktailP\x18\x1d \x01(\x01:\x01\x30\x12\x19\n\x0e\x43ocktailCharge\x18\x1e \x01(\x05:\x01\x30\x12\x1a\n\x0f\x43ocktailTrkHits\x18\x1f \x01(\x05:\x01\x30\x12\x18\n\rCocktailTrkD0\x18  \x01(\x01:\x01\x30\x12\x1d\n\x12\x43ocktailTrkD0Error\x18! \x01(\x01:\x01\x30\x12\x18\n\rCocktailTrkDz\x18\" \x01(\x01:\x01\x30\x12\x1d\n\x12\x43ocktailTrkDzError\x18# \x01(\x01:\x01\x30\x12\x1d\n\x12\x43ocktailGlobalChi2\x18$ \x01(\x01:\x01\x30\"\xb0\x01\n\x03MET\x12\r\n\x02\x45x\x18\x01 \x01(\x01:\x01\x30\x12\r\n\x02\x45y\x18\x02 \x01(\x01:\x01\x30\x12\r\n\x02\x45T\x18\x03 \x01(\x01:\x01\x30\x12\x0e\n\x03Phi\x18\x04 \x01(\x01:\x01\x30\x12\x10\n\x05SumET\x18\x05 \x01(\x01:\x01\x30\x12\x17\n\x0cSignificance\x18\x06 \x01(\x01:\x01\x30\x12\x13\n\x08\x45TUncorr\x18\x07 \x01(\x01:\x01\x30\x12\x14\n\tPhiUncorr\x18\x08 \x01(\x01:\x01\x30\x12\x16\n\x0bSumETUncorr\x18\t \x01(\x01:\x01\x30\"\xd4\x01\n\x06Vertex\x12\x0c\n\x01X\x18\x01 \x01(\x01:\x01\x30\x12\x0c\n\x01Y\x18\x02 \x01(\x01:\x01\x30\x12\x0c\n\x01Z\x18\x03 \x01(\x01:\x01\x30\x12\x0f\n\x04XErr\x18\x04 \x01(\x01:\x01\x30\x12\x0f\n\x04YErr\x18\x05 \x01(\x01:\x01\x30\x12\x0f\n\x04ZErr\x18\x06 \x01(\x01:\x01\x30\x12\x0e\n\x03Rho\x18\x07 \x01(\x01:\x01\x30\x12\x0f\n\x04\x43hi2\x18\x08 \x01(\x01:\x01\x30\x12\x0e\n\x03NDF\x18\t \x01(\x01:\x01\x30\x12\x12\n\x07NTracks\x18\n \x01(\x05:\x01\x30\x12\x15\n\nNTracksW05\x18\x0b \x01(\x05:\x01\x30\x12\x11\n\x06IsFake\x18\x0c \x01(\x05:\x01\x30\"\xc2\x02\n\x08\x42\x65\x61mSpot\x12\x11\n\x06WidthX\x18\x01 \x01(\x01:\x01\x30\x12\x16\n\x0bWidthXError\x18\x02 \x01(\x01:\x01\x30\x12\x11\n\x06WidthY\x18\x03 \x01(\x01:\x01\x30\x12\x16\n\x0bWidthYError\x18\x04 \x01(\x01:\x01\x30\x12\r\n\x02X0\x18\x05 \x01(\x01:\x01\x30\x12\x12\n\x07X0Error\x18\x06 \x01(\x01:\x01\x30\x12\r\n\x02Y0\x18\x07 \x01(\x01:\x01\x30\x12\x12\n\x07Y0Error\x18\x08 \x01(\x01:\x01\x30\x12\r\n\x02Z0\x18\t \x01(\x01:\x01\x30\x12\x12\n\x07Z0Error\x18\n \x01(\x01:\x01\x30\x12\x0f\n\x04\x64xdz\x18\x0b \x01(\x01:\x01\x30\x12\x14\n\tdxdzError\x18\x0c \x01(\x01:\x01\x30\x12\x0f\n\x04\x64ydz\x18\r \x01(\x01:\x01\x30\x12\x14\n\tdydzError\x18\x0e \x01(\x01:\x01\x30\x12\x11\n\x06sigmaZ\x18\x0f \x01(\x01:\x01\x30\x12\x16\n\x0bsigmaZError\x18\x10 \x01(\x01:\x01\x30\"h\n\x07Trigger\x12\x12\n\nL1PhysBits\x18\x01 \x03(\x05\x12\x12\n\nL1TechBits\x18\x02 \x03(\x05\x12\x0f\n\x07HLTBits\x18\x03 \x03(\x05\x12\x12\n\nHLTResults\x18\x04 \x03(\x05\x12\x10\n\x08HLTNames\x18\x05 \x03(\t\"\xe4\x04\n\x05\x45vent\x12\x1d\n\x0bgoodPatJets\x18\x01 \x03(\x0b\x32\x08.HEP.Jet\x12\"\n\x10goodPatJetsPFlow\x18\x02 \x03(\x0b\x32\x08.HEP.Jet\x12\"\n\x10goodPatJetsCA8PF\x18\x03 \x03(\x0b\x32\x08.HEP.Jet\x12+\n\x14selectedPatElectrons\x18\x04 \x03(\x0b\x32\r.HEP.Electron\x12\x35\n\x1eselectedPatElectronsLoosePFlow\x18\x05 \x03(\x0b\x32\r.HEP.Electron\x12\x19\n\x07patMETs\x18\x06 \x03(\x0b\x32\x08.HEP.MET\x12\x1e\n\x0cpatMETsPFlow\x18\x07 \x03(\x0b\x32\x08.HEP.MET\x12#\n\x10selectedPatMuons\x18\x08 \x03(\x0b\x32\t.HEP.Muon\x12-\n\x1aselectedPatMuonsLoosePFlow\x18\t \x03(\x0b\x32\t.HEP.Muon\x12/\n\x1agoodOfflinePrimaryVertices\x18\n \x03(\x0b\x32\x0b.HEP.Vertex\x12\x1f\n\x08\x62\x65\x61mSpot\x18\x0b \x01(\x0b\x32\r.HEP.BeamSpot\x12\x15\n\rMagneticField\x18\x0c \x01(\x01\x12\x0b\n\x03Run\x18\r \x02(\r\x12\x0e\n\x06Number\x18\x0e \x02(\r\x12\r\n\x05\x42unch\x18\x0f \x01(\r\x12\x13\n\x0bLumiSection\x18\x10 \x02(\r\x12\r\n\x05Orbit\x18\x11 \x01(\r\x12\x0c\n\x04Time\x18\x12 \x01(\x01\x12\x0e\n\x06isData\x18\x13 \x01(\x08\x12\x0b\n\x03rho\x18\x14 \x01(\x01\x12\x1d\n\x07trigger\x18\x15 \x01(\x0b\x32\x0c.HEP.Trigger\"\xec\x01\n\x08GenEvent\x12\x11\n\tProcessID\x18\x01 \x01(\r\x12\r\n\x05PtHat\x18\x02 \x01(\x01\x12\x12\n\nPDFWeights\x18\x03 \x03(\x01\x12\x1a\n\x12PileUpInteractions\x18\x04 \x03(\x05\x12\x16\n\x0ePileUpOriginBX\x18\x05 \x03(\x05\x12\x17\n\x0cGenMetExTrue\x18\x06 \x01(\x01:\x01\x30\x12\x17\n\x0cGenMetEyTrue\x18\x07 \x01(\x01:\x01\x30\x12\x1c\n\x07genJets\x18\x08 \x03(\x0b\x32\x0b.HEP.GenJet\x12&\n\x0cgenParticles\x18\t \x03(\x0b\x32\x10.HEP.GenParticle\"M\n\x0f\x45ventCollection\x12\x19\n\x05\x65vent\x18\x01 \x03(\x0b\x32\n.HEP.Event\x12\x1f\n\x08genEvent\x18\x02 \x03(\x0b\x32\r.HEP.GenEvent')
 
 
 
@@ -36,8 +35,8 @@ _JET_JETALGORITHM = descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=620,
-  serialized_end=682,
+  serialized_start=1782,
+  serialized_end=1844,
 )
 
 _ELECTRON_ELECTRONALGORITHM = descriptor.EnumDescriptor(
@@ -57,8 +56,8 @@ _ELECTRON_ELECTRONALGORITHM = descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=1248,
-  serialized_end=1295,
+  serialized_start=3383,
+  serialized_end=3430,
 )
 
 
@@ -71,29 +70,29 @@ _FOURVECTOR = descriptor.Descriptor(
   fields=[
     descriptor.FieldDescriptor(
       name='energy', full_name='HEP.FourVector.energy', index=0,
-      number=1, type=1, cpp_type=5, label=2,
-      has_default_value=False, default_value=0,
+      number=1, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
       name='px', full_name='HEP.FourVector.px', index=1,
-      number=2, type=1, cpp_type=5, label=2,
-      has_default_value=False, default_value=0,
+      number=2, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
       name='py', full_name='HEP.FourVector.py', index=2,
-      number=3, type=1, cpp_type=5, label=2,
-      has_default_value=False, default_value=0,
+      number=3, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
       name='pz', full_name='HEP.FourVector.pz', index=3,
-      number=4, type=1, cpp_type=5, label=2,
-      has_default_value=False, default_value=0,
+      number=4, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -107,7 +106,7 @@ _FOURVECTOR = descriptor.Descriptor(
   is_extendable=False,
   extension_ranges=[],
   serialized_start=30,
-  serialized_end=94,
+  serialized_end=106,
 )
 
 
@@ -127,15 +126,15 @@ _PARTICLE = descriptor.Descriptor(
       options=None),
     descriptor.FieldDescriptor(
       name='charge', full_name='HEP.Particle.charge', index=1,
-      number=2, type=1, cpp_type=5, label=2,
-      has_default_value=False, default_value=0,
+      number=2, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
       name='mass', full_name='HEP.Particle.mass', index=2,
-      number=3, type=1, cpp_type=5, label=2,
-      has_default_value=False, default_value=0,
+      number=3, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -148,8 +147,8 @@ _PARTICLE = descriptor.Descriptor(
   options=None,
   is_extendable=False,
   extension_ranges=[],
-  serialized_start=96,
-  serialized_end=173,
+  serialized_start=108,
+  serialized_end=191,
 )
 
 
@@ -175,64 +174,365 @@ _JET = descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='electromagneticFraction', full_name='HEP.Jet.electromagneticFraction', index=2,
+      name='Eta', full_name='HEP.Jet.Eta', index=2,
       number=3, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='numberOfRecHitsContaining90PercentOfTheJetEnergy', full_name='HEP.Jet.numberOfRecHitsContaining90PercentOfTheJetEnergy', index=3,
+      name='Phi', full_name='HEP.Jet.Phi', index=3,
       number=4, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='fractionOfEnergyIntheHottestHPDReadout', full_name='HEP.Jet.fractionOfEnergyIntheHottestHPDReadout', index=4,
+      name='Pt', full_name='HEP.Jet.Pt', index=4,
       number=5, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='numberOfDaughters', full_name='HEP.Jet.numberOfDaughters', index=5,
-      number=6, type=13, cpp_type=3, label=1,
+      name='PtRaw', full_name='HEP.Jet.PtRaw', index=5,
+      number=6, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='chargedEmEnergyFraction', full_name='HEP.Jet.chargedEmEnergyFraction', index=6,
+      name='EnergyRaw', full_name='HEP.Jet.EnergyRaw', index=6,
       number=7, type=1, cpp_type=5, label=1,
-      has_default_value=True, default_value=1,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='neutralHadronEnergyFraction', full_name='HEP.Jet.neutralHadronEnergyFraction', index=7,
-      number=8, type=1, cpp_type=5, label=1,
-      has_default_value=True, default_value=1,
+      name='PartonFlavour', full_name='HEP.Jet.PartonFlavour', index=7,
+      number=8, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='neutralEmEnergyFraction', full_name='HEP.Jet.neutralEmEnergyFraction', index=8,
+      name='JECUnc', full_name='HEP.Jet.JECUnc', index=8,
       number=9, type=1, cpp_type=5, label=1,
-      has_default_value=True, default_value=1,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='chargedHadronEnergyFraction', full_name='HEP.Jet.chargedHadronEnergyFraction', index=9,
+      name='L2L3ResJEC', full_name='HEP.Jet.L2L3ResJEC', index=9,
       number=10, type=1, cpp_type=5, label=1,
-      has_default_value=True, default_value=1,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='chargedMultiplicity', full_name='HEP.Jet.chargedMultiplicity', index=10,
-      number=11, type=13, cpp_type=3, label=1,
+      name='L3AbsJEC', full_name='HEP.Jet.L3AbsJEC', index=10,
+      number=11, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='L2RelJEC', full_name='HEP.Jet.L2RelJEC', index=11,
+      number=12, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='L1OffJEC', full_name='HEP.Jet.L1OffJEC', index=12,
+      number=13, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='EMF', full_name='HEP.Jet.EMF', index=13,
+      number=14, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='resEMF', full_name='HEP.Jet.resEMF', index=14,
+      number=15, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='HADF', full_name='HEP.Jet.HADF', index=15,
+      number=16, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='n90Hits', full_name='HEP.Jet.n90Hits', index=16,
+      number=17, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='fHPD', full_name='HEP.Jet.fHPD', index=17,
+      number=18, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='fRBX', full_name='HEP.Jet.fRBX', index=18,
+      number=19, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='SigmaEta', full_name='HEP.Jet.SigmaEta', index=19,
+      number=20, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='SigmaPhi', full_name='HEP.Jet.SigmaPhi', index=20,
+      number=21, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='TrackCountingHighEffBTag', full_name='HEP.Jet.TrackCountingHighEffBTag', index=21,
+      number=22, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='TrackCountingHighPurBTag', full_name='HEP.Jet.TrackCountingHighPurBTag', index=22,
+      number=23, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='SimpleSecondaryVertexHighEffBTag', full_name='HEP.Jet.SimpleSecondaryVertexHighEffBTag', index=23,
+      number=24, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='SimpleSecondaryVertexHighPurBTag', full_name='HEP.Jet.SimpleSecondaryVertexHighPurBTag', index=24,
+      number=25, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='JetProbabilityBTag', full_name='HEP.Jet.JetProbabilityBTag', index=25,
+      number=26, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='JetBProbabilityBTag', full_name='HEP.Jet.JetBProbabilityBTag', index=26,
+      number=27, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='SoftElectronBJetTag', full_name='HEP.Jet.SoftElectronBJetTag', index=27,
+      number=28, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='SoftMuonBJetTag', full_name='HEP.Jet.SoftMuonBJetTag', index=28,
+      number=29, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='SoftMuonNoIPBJetTag', full_name='HEP.Jet.SoftMuonNoIPBJetTag', index=29,
+      number=30, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='CombinedSVBJetTag', full_name='HEP.Jet.CombinedSVBJetTag', index=30,
+      number=31, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='CombinedSVMVABJetTag', full_name='HEP.Jet.CombinedSVMVABJetTag', index=31,
+      number=32, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='PassLooseID', full_name='HEP.Jet.PassLooseID', index=32,
+      number=33, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='PassTightID', full_name='HEP.Jet.PassTightID', index=33,
+      number=34, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='ChargedEmEnergyFraction', full_name='HEP.Jet.ChargedEmEnergyFraction', index=34,
+      number=35, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='ChargedHadronEnergyFraction', full_name='HEP.Jet.ChargedHadronEnergyFraction', index=35,
+      number=36, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='ChargedMuEnergyFraction', full_name='HEP.Jet.ChargedMuEnergyFraction', index=36,
+      number=37, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='ElectronEnergyFraction', full_name='HEP.Jet.ElectronEnergyFraction', index=37,
+      number=38, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='MuonEnergyFraction', full_name='HEP.Jet.MuonEnergyFraction', index=38,
+      number=39, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='NeutralEmEnergyFraction', full_name='HEP.Jet.NeutralEmEnergyFraction', index=39,
+      number=40, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='NeutralHadronEnergyFraction', full_name='HEP.Jet.NeutralHadronEnergyFraction', index=40,
+      number=41, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='PhotonEnergyFraction', full_name='HEP.Jet.PhotonEnergyFraction', index=41,
+      number=42, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='ChargedHadronMultiplicity', full_name='HEP.Jet.ChargedHadronMultiplicity', index=42,
+      number=43, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='ChargedMultiplicity', full_name='HEP.Jet.ChargedMultiplicity', index=43,
+      number=44, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='ElectronMultiplicity', full_name='HEP.Jet.ElectronMultiplicity', index=44,
+      number=45, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='MuonMultiplicity', full_name='HEP.Jet.MuonMultiplicity', index=45,
+      number=46, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='NeutralHadronMultiplicity', full_name='HEP.Jet.NeutralHadronMultiplicity', index=46,
+      number=47, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='NeutralMultiplicity', full_name='HEP.Jet.NeutralMultiplicity', index=47,
+      number=48, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='PhotonMultiplicity', full_name='HEP.Jet.PhotonMultiplicity', index=48,
+      number=49, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='NConstituents', full_name='HEP.Jet.NConstituents', index=49,
+      number=50, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='ChargedEmEnergyFractionRAW', full_name='HEP.Jet.ChargedEmEnergyFractionRAW', index=50,
+      number=51, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='ChargedHadronEnergyFractionRAW', full_name='HEP.Jet.ChargedHadronEnergyFractionRAW', index=51,
+      number=52, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='NeutralEmEnergyFractionRAW', full_name='HEP.Jet.NeutralEmEnergyFractionRAW', index=52,
+      number=53, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='NeutralHadronEnergyFractionRAW', full_name='HEP.Jet.NeutralHadronEnergyFractionRAW', index=53,
+      number=54, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -247,10 +547,233 @@ _JET = descriptor.Descriptor(
   options=None,
   is_extendable=False,
   extension_ranges=[],
-  serialized_start=176,
-  serialized_end=682,
+  serialized_start=194,
+  serialized_end=1844,
 )
 
+
+_GENJET = descriptor.Descriptor(
+  name='GenJet',
+  full_name='HEP.GenJet',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    descriptor.FieldDescriptor(
+      name='basic', full_name='HEP.GenJet.basic', index=0,
+      number=1, type=11, cpp_type=10, label=2,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='Eta', full_name='HEP.GenJet.Eta', index=1,
+      number=2, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='Phi', full_name='HEP.GenJet.Phi', index=2,
+      number=3, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='Pt', full_name='HEP.GenJet.Pt', index=3,
+      number=4, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='EMF', full_name='HEP.GenJet.EMF', index=4,
+      number=5, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='HADF', full_name='HEP.GenJet.HADF', index=5,
+      number=6, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  extension_ranges=[],
+  serialized_start=1846,
+  serialized_end=1964,
+)
+
+
+_GENPARTICLE = descriptor.Descriptor(
+  name='GenParticle',
+  full_name='HEP.GenParticle',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    descriptor.FieldDescriptor(
+      name='basic', full_name='HEP.GenParticle.basic', index=0,
+      number=1, type=11, cpp_type=10, label=2,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='Eta', full_name='HEP.GenParticle.Eta', index=1,
+      number=2, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='Phi', full_name='HEP.GenParticle.Phi', index=2,
+      number=3, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='Pt', full_name='HEP.GenParticle.Pt', index=3,
+      number=4, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='PdgId', full_name='HEP.GenParticle.PdgId', index=4,
+      number=5, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='VX', full_name='HEP.GenParticle.VX', index=5,
+      number=6, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='VY', full_name='HEP.GenParticle.VY', index=6,
+      number=7, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='VZ', full_name='HEP.GenParticle.VZ', index=7,
+      number=8, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='NumDaught', full_name='HEP.GenParticle.NumDaught', index=8,
+      number=9, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='Status', full_name='HEP.GenParticle.Status', index=9,
+      number=10, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='MotherIndex', full_name='HEP.GenParticle.MotherIndex', index=10,
+      number=11, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  extension_ranges=[],
+  serialized_start=1967,
+  serialized_end=2185,
+)
+
+
+_ELECTRON_GSFTRACK = descriptor.Descriptor(
+  name='GSFTrack',
+  full_name='HEP.Electron.GSFTrack',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    descriptor.FieldDescriptor(
+      name='d0', full_name='HEP.Electron.GSFTrack.d0', index=0,
+      number=1, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='Eta', full_name='HEP.Electron.GSFTrack.Eta', index=1,
+      number=2, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='Phi', full_name='HEP.Electron.GSFTrack.Phi', index=2,
+      number=3, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='Theta', full_name='HEP.Electron.GSFTrack.Theta', index=3,
+      number=4, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='Charge', full_name='HEP.Electron.GSFTrack.Charge', index=4,
+      number=5, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='Pt', full_name='HEP.Electron.GSFTrack.Pt', index=5,
+      number=6, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  extension_ranges=[],
+  serialized_start=3272,
+  serialized_end=3381,
+)
 
 _ELECTRON = descriptor.Descriptor(
   name='Electron',
@@ -274,136 +797,325 @@ _ELECTRON = descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='superCluser_Eta', full_name='HEP.Electron.superCluser_Eta', index=2,
-      number=3, type=1, cpp_type=5, label=2,
-      has_default_value=False, default_value=0,
+      name='Eta', full_name='HEP.Electron.Eta', index=2,
+      number=3, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='ecal_Isolation', full_name='HEP.Electron.ecal_Isolation', index=3,
+      name='Phi', full_name='HEP.Electron.Phi', index=3,
       number=4, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=0,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='hcal_Isolation', full_name='HEP.Electron.hcal_Isolation', index=4,
+      name='Pt', full_name='HEP.Electron.Pt', index=4,
       number=5, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=0,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='tracker_Isolation', full_name='HEP.Electron.tracker_Isolation', index=5,
+      name='Energy', full_name='HEP.Electron.Energy', index=5,
       number=6, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=0,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='innerLayerMissingHits', full_name='HEP.Electron.innerLayerMissingHits', index=6,
+      name='CaloEnergy', full_name='HEP.Electron.CaloEnergy', index=6,
       number=7, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=0,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='sigma_IEtaIEta', full_name='HEP.Electron.sigma_IEtaIEta', index=7,
+      name='HoE', full_name='HEP.Electron.HoE', index=7,
       number=8, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=0,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='dPhi_In', full_name='HEP.Electron.dPhi_In', index=8,
+      name='eSeedClusterOverPout', full_name='HEP.Electron.eSeedClusterOverPout', index=8,
+      number=46, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='EoverP', full_name='HEP.Electron.EoverP', index=9,
       number=9, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=0,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='dEta_In', full_name='HEP.Electron.dEta_In', index=9,
+      name='fbrem', full_name='HEP.Electron.fbrem', index=10,
       number=10, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=0,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='hadOverEm', full_name='HEP.Electron.hadOverEm', index=10,
+      name='SigmaEtaEta', full_name='HEP.Electron.SigmaEtaEta', index=11,
       number=11, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=0,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='CiCElectronIDCompressed', full_name='HEP.Electron.CiCElectronIDCompressed', index=11,
-      number=12, type=13, cpp_type=3, label=1,
-      has_default_value=False, default_value=0,
+      name='SigmaIEtaIEta', full_name='HEP.Electron.SigmaIEtaIEta', index=12,
+      number=12, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='sharedFractionInnerHits', full_name='HEP.Electron.sharedFractionInnerHits', index=12,
+      name='DeltaPhiTrkSC', full_name='HEP.Electron.DeltaPhiTrkSC', index=13,
       number=13, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=0,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='zDistanceToPrimaryVertex', full_name='HEP.Electron.zDistanceToPrimaryVertex', index=13,
+      name='DeltaEtaTrkSC', full_name='HEP.Electron.DeltaEtaTrkSC', index=14,
       number=14, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=0,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='dCotThetaToNextTrack', full_name='HEP.Electron.dCotThetaToNextTrack', index=14,
+      name='TrkIso03', full_name='HEP.Electron.TrkIso03', index=15,
       number=15, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=0,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='distToNextTrack', full_name='HEP.Electron.distToNextTrack', index=15,
+      name='EcalIso03', full_name='HEP.Electron.EcalIso03', index=16,
       number=16, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=0,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='PFGamma_Isolation', full_name='HEP.Electron.PFGamma_Isolation', index=16,
+      name='HcalIso03', full_name='HEP.Electron.HcalIso03', index=17,
       number=17, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=0,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='PFChargedHadron_Isolation', full_name='HEP.Electron.PFChargedHadron_Isolation', index=17,
+      name='TrkIso', full_name='HEP.Electron.TrkIso', index=18,
       number=18, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=0,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='PFNeutralHadron_Isolation', full_name='HEP.Electron.PFNeutralHadron_Isolation', index=18,
+      name='EcalIso', full_name='HEP.Electron.EcalIso', index=19,
       number=19, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=0,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='HcalIso', full_name='HEP.Electron.HcalIso', index=20,
+      number=20, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='dB', full_name='HEP.Electron.dB', index=21,
+      number=21, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='closestCtfTrackRef', full_name='HEP.Electron.closestCtfTrackRef', index=22,
+      number=22, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='shFracInnerHits', full_name='HEP.Electron.shFracInnerHits', index=23,
+      number=23, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='track', full_name='HEP.Electron.track', index=24,
+      number=24, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='EcalIsoHeep', full_name='HEP.Electron.EcalIsoHeep', index=25,
+      number=25, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='HcalIsoD1Heep', full_name='HEP.Electron.HcalIsoD1Heep', index=26,
+      number=26, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='HcalIsoD2Heep', full_name='HEP.Electron.HcalIsoD2Heep', index=27,
+      number=27, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='TrkIsoHeep', full_name='HEP.Electron.TrkIsoHeep', index=28,
+      number=28, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='MissingHits', full_name='HEP.Electron.MissingHits', index=29,
+      number=29, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='Dist', full_name='HEP.Electron.Dist', index=30,
+      number=30, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='DCotTheta', full_name='HEP.Electron.DCotTheta', index=31,
+      number=31, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='SCEta', full_name='HEP.Electron.SCEta', index=32,
+      number=32, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='SCPhi', full_name='HEP.Electron.SCPhi', index=33,
+      number=33, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='SCPt', full_name='HEP.Electron.SCPt', index=34,
+      number=34, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='SCRawEnergy', full_name='HEP.Electron.SCRawEnergy', index=35,
+      number=35, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='VtxIndex', full_name='HEP.Electron.VtxIndex', index=36,
+      number=36, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='VtxDistXY', full_name='HEP.Electron.VtxDistXY', index=37,
+      number=37, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='VtxDistZ', full_name='HEP.Electron.VtxDistZ', index=38,
+      number=38, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='VertexX', full_name='HEP.Electron.VertexX', index=39,
+      number=39, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='VertexY', full_name='HEP.Electron.VertexY', index=40,
+      number=40, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='VertexZ', full_name='HEP.Electron.VertexZ', index=41,
+      number=41, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='PassID', full_name='HEP.Electron.PassID', index=42,
+      number=42, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='PfChargedHadronIso', full_name='HEP.Electron.PfChargedHadronIso', index=43,
+      number=43, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='PfNeutralHadronIso', full_name='HEP.Electron.PfNeutralHadronIso', index=44,
+      number=44, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='PFGammaIso', full_name='HEP.Electron.PFGammaIso', index=45,
+      number=45, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
   ],
   extensions=[
   ],
-  nested_types=[],
+  nested_types=[_ELECTRON_GSFTRACK, ],
   enum_types=[
     _ELECTRON_ELECTRONALGORITHM,
   ],
   options=None,
   is_extendable=False,
   extension_ranges=[],
-  serialized_start=685,
-  serialized_end=1295,
+  serialized_start=2188,
+  serialized_end=3430,
 )
 
 
@@ -414,6 +1126,258 @@ _MUON = descriptor.Descriptor(
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
+    descriptor.FieldDescriptor(
+      name='basic', full_name='HEP.Muon.basic', index=0,
+      number=1, type=11, cpp_type=10, label=2,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='TrkIso03', full_name='HEP.Muon.TrkIso03', index=1,
+      number=2, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='EcalIso03', full_name='HEP.Muon.EcalIso03', index=2,
+      number=3, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='HcalIso03', full_name='HEP.Muon.HcalIso03', index=3,
+      number=4, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='isGoodGlobalMuon', full_name='HEP.Muon.isGoodGlobalMuon', index=4,
+      number=5, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='PfChargedHadronIso', full_name='HEP.Muon.PfChargedHadronIso', index=5,
+      number=6, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='PfNeutralHadronIso', full_name='HEP.Muon.PfNeutralHadronIso', index=6,
+      number=7, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='PFGammaIso', full_name='HEP.Muon.PFGammaIso', index=7,
+      number=8, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='Eta', full_name='HEP.Muon.Eta', index=8,
+      number=9, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='Phi', full_name='HEP.Muon.Phi', index=9,
+      number=10, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='Pt', full_name='HEP.Muon.Pt', index=10,
+      number=11, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='P', full_name='HEP.Muon.P', index=11,
+      number=12, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='TrkHits', full_name='HEP.Muon.TrkHits', index=12,
+      number=13, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='TrkD0', full_name='HEP.Muon.TrkD0', index=13,
+      number=14, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='TrkD0Error', full_name='HEP.Muon.TrkD0Error', index=14,
+      number=15, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='TrkDz', full_name='HEP.Muon.TrkDz', index=15,
+      number=16, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='TrkDzError', full_name='HEP.Muon.TrkDzError', index=16,
+      number=17, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='GlobalChi2', full_name='HEP.Muon.GlobalChi2', index=17,
+      number=18, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='TrkIso', full_name='HEP.Muon.TrkIso', index=18,
+      number=19, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='EcalIso', full_name='HEP.Muon.EcalIso', index=19,
+      number=20, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='HcalIso', full_name='HEP.Muon.HcalIso', index=20,
+      number=21, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='HOIso', full_name='HEP.Muon.HOIso', index=21,
+      number=22, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='VtxIndex', full_name='HEP.Muon.VtxIndex', index=22,
+      number=23, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='VtxDistXY', full_name='HEP.Muon.VtxDistXY', index=23,
+      number=24, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='VtxDistZ', full_name='HEP.Muon.VtxDistZ', index=24,
+      number=25, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='CocktailEta', full_name='HEP.Muon.CocktailEta', index=25,
+      number=26, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='CocktailPhi', full_name='HEP.Muon.CocktailPhi', index=26,
+      number=27, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='CocktailPt', full_name='HEP.Muon.CocktailPt', index=27,
+      number=28, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='CocktailP', full_name='HEP.Muon.CocktailP', index=28,
+      number=29, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='CocktailCharge', full_name='HEP.Muon.CocktailCharge', index=29,
+      number=30, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='CocktailTrkHits', full_name='HEP.Muon.CocktailTrkHits', index=30,
+      number=31, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='CocktailTrkD0', full_name='HEP.Muon.CocktailTrkD0', index=31,
+      number=32, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='CocktailTrkD0Error', full_name='HEP.Muon.CocktailTrkD0Error', index=32,
+      number=33, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='CocktailTrkDz', full_name='HEP.Muon.CocktailTrkDz', index=33,
+      number=34, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='CocktailTrkDzError', full_name='HEP.Muon.CocktailTrkDzError', index=34,
+      number=35, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='CocktailGlobalChi2', full_name='HEP.Muon.CocktailGlobalChi2', index=35,
+      number=36, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -423,8 +1387,8 @@ _MUON = descriptor.Descriptor(
   options=None,
   is_extendable=False,
   extension_ranges=[],
-  serialized_start=1297,
-  serialized_end=1303,
+  serialized_start=3433,
+  serialized_end=4268,
 )
 
 
@@ -436,9 +1400,65 @@ _MET = descriptor.Descriptor(
   containing_type=None,
   fields=[
     descriptor.FieldDescriptor(
-      name='basic', full_name='HEP.MET.basic', index=0,
-      number=1, type=11, cpp_type=10, label=2,
-      has_default_value=False, default_value=None,
+      name='Ex', full_name='HEP.MET.Ex', index=0,
+      number=1, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='Ey', full_name='HEP.MET.Ey', index=1,
+      number=2, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='ET', full_name='HEP.MET.ET', index=2,
+      number=3, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='Phi', full_name='HEP.MET.Phi', index=3,
+      number=4, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='SumET', full_name='HEP.MET.SumET', index=4,
+      number=5, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='Significance', full_name='HEP.MET.Significance', index=5,
+      number=6, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='ETUncorr', full_name='HEP.MET.ETUncorr', index=6,
+      number=7, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='PhiUncorr', full_name='HEP.MET.PhiUncorr', index=7,
+      number=8, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='SumETUncorr', full_name='HEP.MET.SumETUncorr', index=8,
+      number=9, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -451,8 +1471,8 @@ _MET = descriptor.Descriptor(
   options=None,
   is_extendable=False,
   extension_ranges=[],
-  serialized_start=1305,
-  serialized_end=1340,
+  serialized_start=4271,
+  serialized_end=4447,
 )
 
 
@@ -464,30 +1484,86 @@ _VERTEX = descriptor.Descriptor(
   containing_type=None,
   fields=[
     descriptor.FieldDescriptor(
-      name='is_fake', full_name='HEP.Vertex.is_fake', index=0,
-      number=1, type=8, cpp_type=7, label=2,
-      has_default_value=False, default_value=False,
+      name='X', full_name='HEP.Vertex.X', index=0,
+      number=1, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='degreesOfFreedom', full_name='HEP.Vertex.degreesOfFreedom', index=1,
-      number=2, type=13, cpp_type=3, label=2,
-      has_default_value=False, default_value=0,
+      name='Y', full_name='HEP.Vertex.Y', index=1,
+      number=2, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='z_position', full_name='HEP.Vertex.z_position', index=2,
-      number=3, type=1, cpp_type=5, label=2,
-      has_default_value=False, default_value=0,
+      name='Z', full_name='HEP.Vertex.Z', index=2,
+      number=3, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='rho', full_name='HEP.Vertex.rho', index=3,
-      number=4, type=1, cpp_type=5, label=2,
-      has_default_value=False, default_value=0,
+      name='XErr', full_name='HEP.Vertex.XErr', index=3,
+      number=4, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='YErr', full_name='HEP.Vertex.YErr', index=4,
+      number=5, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='ZErr', full_name='HEP.Vertex.ZErr', index=5,
+      number=6, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='Rho', full_name='HEP.Vertex.Rho', index=6,
+      number=7, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='Chi2', full_name='HEP.Vertex.Chi2', index=7,
+      number=8, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='NDF', full_name='HEP.Vertex.NDF', index=8,
+      number=9, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='NTracks', full_name='HEP.Vertex.NTracks', index=9,
+      number=10, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='NTracksW05', full_name='HEP.Vertex.NTracksW05', index=10,
+      number=11, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='IsFake', full_name='HEP.Vertex.IsFake', index=11,
+      number=12, type=5, cpp_type=1, label=1,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -500,8 +1576,197 @@ _VERTEX = descriptor.Descriptor(
   options=None,
   is_extendable=False,
   extension_ranges=[],
-  serialized_start=1342,
-  serialized_end=1426,
+  serialized_start=4450,
+  serialized_end=4662,
+)
+
+
+_BEAMSPOT = descriptor.Descriptor(
+  name='BeamSpot',
+  full_name='HEP.BeamSpot',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    descriptor.FieldDescriptor(
+      name='WidthX', full_name='HEP.BeamSpot.WidthX', index=0,
+      number=1, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='WidthXError', full_name='HEP.BeamSpot.WidthXError', index=1,
+      number=2, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='WidthY', full_name='HEP.BeamSpot.WidthY', index=2,
+      number=3, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='WidthYError', full_name='HEP.BeamSpot.WidthYError', index=3,
+      number=4, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='X0', full_name='HEP.BeamSpot.X0', index=4,
+      number=5, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='X0Error', full_name='HEP.BeamSpot.X0Error', index=5,
+      number=6, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='Y0', full_name='HEP.BeamSpot.Y0', index=6,
+      number=7, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='Y0Error', full_name='HEP.BeamSpot.Y0Error', index=7,
+      number=8, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='Z0', full_name='HEP.BeamSpot.Z0', index=8,
+      number=9, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='Z0Error', full_name='HEP.BeamSpot.Z0Error', index=9,
+      number=10, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='dxdz', full_name='HEP.BeamSpot.dxdz', index=10,
+      number=11, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='dxdzError', full_name='HEP.BeamSpot.dxdzError', index=11,
+      number=12, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='dydz', full_name='HEP.BeamSpot.dydz', index=12,
+      number=13, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='dydzError', full_name='HEP.BeamSpot.dydzError', index=13,
+      number=14, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='sigmaZ', full_name='HEP.BeamSpot.sigmaZ', index=14,
+      number=15, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='sigmaZError', full_name='HEP.BeamSpot.sigmaZError', index=15,
+      number=16, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  extension_ranges=[],
+  serialized_start=4665,
+  serialized_end=4987,
+)
+
+
+_TRIGGER = descriptor.Descriptor(
+  name='Trigger',
+  full_name='HEP.Trigger',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    descriptor.FieldDescriptor(
+      name='L1PhysBits', full_name='HEP.Trigger.L1PhysBits', index=0,
+      number=1, type=5, cpp_type=1, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='L1TechBits', full_name='HEP.Trigger.L1TechBits', index=1,
+      number=2, type=5, cpp_type=1, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='HLTBits', full_name='HEP.Trigger.HLTBits', index=2,
+      number=3, type=5, cpp_type=1, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='HLTResults', full_name='HEP.Trigger.HLTResults', index=3,
+      number=4, type=5, cpp_type=1, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='HLTNames', full_name='HEP.Trigger.HLTNames', index=4,
+      number=5, type=9, cpp_type=9, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  extension_ranges=[],
+  serialized_start=4989,
+  serialized_end=5093,
 )
 
 
@@ -513,50 +1778,232 @@ _EVENT = descriptor.Descriptor(
   containing_type=None,
   fields=[
     descriptor.FieldDescriptor(
-      name='run', full_name='HEP.Event.run', index=0,
-      number=1, type=13, cpp_type=3, label=2,
-      has_default_value=False, default_value=0,
+      name='goodPatJets', full_name='HEP.Event.goodPatJets', index=0,
+      number=1, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='lumi', full_name='HEP.Event.lumi', index=1,
-      number=2, type=13, cpp_type=3, label=2,
-      has_default_value=False, default_value=0,
+      name='goodPatJetsPFlow', full_name='HEP.Event.goodPatJetsPFlow', index=1,
+      number=2, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='number', full_name='HEP.Event.number', index=2,
-      number=3, type=13, cpp_type=3, label=1,
-      has_default_value=False, default_value=0,
+      name='goodPatJetsCA8PF', full_name='HEP.Event.goodPatJetsCA8PF', index=2,
+      number=3, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='jets', full_name='HEP.Event.jets', index=3,
+      name='selectedPatElectrons', full_name='HEP.Event.selectedPatElectrons', index=3,
       number=4, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='electrons', full_name='HEP.Event.electrons', index=4,
+      name='selectedPatElectronsLoosePFlow', full_name='HEP.Event.selectedPatElectronsLoosePFlow', index=4,
       number=5, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='met', full_name='HEP.Event.met', index=5,
-      number=6, type=11, cpp_type=10, label=2,
+      name='patMETs', full_name='HEP.Event.patMETs', index=5,
+      number=6, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='patMETsPFlow', full_name='HEP.Event.patMETsPFlow', index=6,
+      number=7, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='selectedPatMuons', full_name='HEP.Event.selectedPatMuons', index=7,
+      number=8, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='selectedPatMuonsLoosePFlow', full_name='HEP.Event.selectedPatMuonsLoosePFlow', index=8,
+      number=9, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='goodOfflinePrimaryVertices', full_name='HEP.Event.goodOfflinePrimaryVertices', index=9,
+      number=10, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='beamSpot', full_name='HEP.Event.beamSpot', index=10,
+      number=11, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='vertices', full_name='HEP.Event.vertices', index=6,
-      number=7, type=11, cpp_type=10, label=3,
+      name='MagneticField', full_name='HEP.Event.MagneticField', index=11,
+      number=12, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='Run', full_name='HEP.Event.Run', index=12,
+      number=13, type=13, cpp_type=3, label=2,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='Number', full_name='HEP.Event.Number', index=13,
+      number=14, type=13, cpp_type=3, label=2,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='Bunch', full_name='HEP.Event.Bunch', index=14,
+      number=15, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='LumiSection', full_name='HEP.Event.LumiSection', index=15,
+      number=16, type=13, cpp_type=3, label=2,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='Orbit', full_name='HEP.Event.Orbit', index=16,
+      number=17, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='Time', full_name='HEP.Event.Time', index=17,
+      number=18, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='isData', full_name='HEP.Event.isData', index=18,
+      number=19, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='rho', full_name='HEP.Event.rho', index=19,
+      number=20, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='trigger', full_name='HEP.Event.trigger', index=20,
+      number=21, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  extension_ranges=[],
+  serialized_start=5096,
+  serialized_end=5708,
+)
+
+
+_GENEVENT = descriptor.Descriptor(
+  name='GenEvent',
+  full_name='HEP.GenEvent',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    descriptor.FieldDescriptor(
+      name='ProcessID', full_name='HEP.GenEvent.ProcessID', index=0,
+      number=1, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='PtHat', full_name='HEP.GenEvent.PtHat', index=1,
+      number=2, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='PDFWeights', full_name='HEP.GenEvent.PDFWeights', index=2,
+      number=3, type=1, cpp_type=5, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='PileUpInteractions', full_name='HEP.GenEvent.PileUpInteractions', index=3,
+      number=4, type=5, cpp_type=1, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='PileUpOriginBX', full_name='HEP.GenEvent.PileUpOriginBX', index=4,
+      number=5, type=5, cpp_type=1, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='GenMetExTrue', full_name='HEP.GenEvent.GenMetExTrue', index=5,
+      number=6, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='GenMetEyTrue', full_name='HEP.GenEvent.GenMetEyTrue', index=6,
+      number=7, type=1, cpp_type=5, label=1,
+      has_default_value=True, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='genJets', full_name='HEP.GenEvent.genJets', index=7,
+      number=8, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    descriptor.FieldDescriptor(
+      name='genParticles', full_name='HEP.GenEvent.genParticles', index=8,
+      number=9, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -570,8 +2017,8 @@ _EVENT = descriptor.Descriptor(
   options=None,
   is_extendable=False,
   extension_ranges=[],
-  serialized_start=1429,
-  serialized_end=1591,
+  serialized_start=5711,
+  serialized_end=5947,
 )
 
 
@@ -589,6 +2036,13 @@ _EVENTCOLLECTION = descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    descriptor.FieldDescriptor(
+      name='genEvent', full_name='HEP.EventCollection.genEvent', index=1,
+      number=2, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -598,32 +2052,39 @@ _EVENTCOLLECTION = descriptor.Descriptor(
   options=None,
   is_extendable=False,
   extension_ranges=[],
-  serialized_start=1593,
-  serialized_end=1637,
+  serialized_start=5949,
+  serialized_end=6026,
 )
+
 
 _PARTICLE.fields_by_name['fourVector'].message_type = _FOURVECTOR
 _JET.fields_by_name['basic'].message_type = _PARTICLE
 _JET.fields_by_name['type'].enum_type = _JET_JETALGORITHM
 _JET_JETALGORITHM.containing_type = _JET;
+_GENJET.fields_by_name['basic'].message_type = _PARTICLE
+_GENPARTICLE.fields_by_name['basic'].message_type = _PARTICLE
+_ELECTRON_GSFTRACK.containing_type = _ELECTRON;
 _ELECTRON.fields_by_name['basic'].message_type = _PARTICLE
 _ELECTRON.fields_by_name['type'].enum_type = _ELECTRON_ELECTRONALGORITHM
+_ELECTRON.fields_by_name['track'].message_type = _ELECTRON_GSFTRACK
 _ELECTRON_ELECTRONALGORITHM.containing_type = _ELECTRON;
-_MET.fields_by_name['basic'].message_type = _PARTICLE
-_EVENT.fields_by_name['jets'].message_type = _JET
-_EVENT.fields_by_name['electrons'].message_type = _ELECTRON
-_EVENT.fields_by_name['met'].message_type = _MET
-_EVENT.fields_by_name['vertices'].message_type = _VERTEX
+_MUON.fields_by_name['basic'].message_type = _PARTICLE
+_EVENT.fields_by_name['goodPatJets'].message_type = _JET
+_EVENT.fields_by_name['goodPatJetsPFlow'].message_type = _JET
+_EVENT.fields_by_name['goodPatJetsCA8PF'].message_type = _JET
+_EVENT.fields_by_name['selectedPatElectrons'].message_type = _ELECTRON
+_EVENT.fields_by_name['selectedPatElectronsLoosePFlow'].message_type = _ELECTRON
+_EVENT.fields_by_name['patMETs'].message_type = _MET
+_EVENT.fields_by_name['patMETsPFlow'].message_type = _MET
+_EVENT.fields_by_name['selectedPatMuons'].message_type = _MUON
+_EVENT.fields_by_name['selectedPatMuonsLoosePFlow'].message_type = _MUON
+_EVENT.fields_by_name['goodOfflinePrimaryVertices'].message_type = _VERTEX
+_EVENT.fields_by_name['beamSpot'].message_type = _BEAMSPOT
+_EVENT.fields_by_name['trigger'].message_type = _TRIGGER
+_GENEVENT.fields_by_name['genJets'].message_type = _GENJET
+_GENEVENT.fields_by_name['genParticles'].message_type = _GENPARTICLE
 _EVENTCOLLECTION.fields_by_name['event'].message_type = _EVENT
-DESCRIPTOR.message_types_by_name['FourVector'] = _FOURVECTOR
-DESCRIPTOR.message_types_by_name['Particle'] = _PARTICLE
-DESCRIPTOR.message_types_by_name['Jet'] = _JET
-DESCRIPTOR.message_types_by_name['Electron'] = _ELECTRON
-DESCRIPTOR.message_types_by_name['Muon'] = _MUON
-DESCRIPTOR.message_types_by_name['MET'] = _MET
-DESCRIPTOR.message_types_by_name['Vertex'] = _VERTEX
-DESCRIPTOR.message_types_by_name['Event'] = _EVENT
-DESCRIPTOR.message_types_by_name['EventCollection'] = _EVENTCOLLECTION
+_EVENTCOLLECTION.fields_by_name['genEvent'].message_type = _GENEVENT
 
 class FourVector(message.Message):
   __metaclass__ = reflection.GeneratedProtocolMessageType
@@ -643,8 +2104,26 @@ class Jet(message.Message):
   
   # @@protoc_insertion_point(class_scope:HEP.Jet)
 
+class GenJet(message.Message):
+  __metaclass__ = reflection.GeneratedProtocolMessageType
+  DESCRIPTOR = _GENJET
+  
+  # @@protoc_insertion_point(class_scope:HEP.GenJet)
+
+class GenParticle(message.Message):
+  __metaclass__ = reflection.GeneratedProtocolMessageType
+  DESCRIPTOR = _GENPARTICLE
+  
+  # @@protoc_insertion_point(class_scope:HEP.GenParticle)
+
 class Electron(message.Message):
   __metaclass__ = reflection.GeneratedProtocolMessageType
+  
+  class GSFTrack(message.Message):
+    __metaclass__ = reflection.GeneratedProtocolMessageType
+    DESCRIPTOR = _ELECTRON_GSFTRACK
+    
+    # @@protoc_insertion_point(class_scope:HEP.Electron.GSFTrack)
   DESCRIPTOR = _ELECTRON
   
   # @@protoc_insertion_point(class_scope:HEP.Electron)
@@ -667,11 +2146,29 @@ class Vertex(message.Message):
   
   # @@protoc_insertion_point(class_scope:HEP.Vertex)
 
+class BeamSpot(message.Message):
+  __metaclass__ = reflection.GeneratedProtocolMessageType
+  DESCRIPTOR = _BEAMSPOT
+  
+  # @@protoc_insertion_point(class_scope:HEP.BeamSpot)
+
+class Trigger(message.Message):
+  __metaclass__ = reflection.GeneratedProtocolMessageType
+  DESCRIPTOR = _TRIGGER
+  
+  # @@protoc_insertion_point(class_scope:HEP.Trigger)
+
 class Event(message.Message):
   __metaclass__ = reflection.GeneratedProtocolMessageType
   DESCRIPTOR = _EVENT
   
   # @@protoc_insertion_point(class_scope:HEP.Event)
+
+class GenEvent(message.Message):
+  __metaclass__ = reflection.GeneratedProtocolMessageType
+  DESCRIPTOR = _GENEVENT
+  
+  # @@protoc_insertion_point(class_scope:HEP.GenEvent)
 
 class EventCollection(message.Message):
   __metaclass__ = reflection.GeneratedProtocolMessageType
