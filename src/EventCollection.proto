@@ -1,150 +1,157 @@
 package HEP;
 
-message FourVector {
-optional double energy = 1 [default = 0];
-optional double px = 2 [default = 0];
-optional double py = 3 [default = 0];
-optional double pz = 4 [default = 0];
-}
-
-message Particle {
-required FourVector fourVector = 1;
-optional double charge = 2 [default = 0];
-optional double mass = 3 [default = 0];
-}
-
 message Jet {
-	required Particle basic = 1;
+	optional double Energy = 1 [default = 0];
+	optional double Px = 2 [default = 0];
+	optional double Py = 3 [default = 0];
+	optional double Pz = 4 [default = 0];
+	optional double Charge = 5 [default = 0];
+	optional double Mass = 6 [default = 0];
 
 	enum JetAlgorithm {
 		Calo_AntiKT_Cone05 = 0;
 		CA08PF = 1;
 		PF2PAT = 2;
  	}
- 	optional JetAlgorithm type = 2 [default = PF2PAT];
+ 	optional JetAlgorithm type = 7 [default = PF2PAT];
 
-	optional double Eta = 3 [default = 0];
-	optional double Phi = 4 [default = 0];
-	optional double Pt = 5 [default = 0];
-	optional double PtRaw = 6 [default = 0];
-	optional double EnergyRaw = 7 [default = 0];
-	optional int32 PartonFlavour = 8 [default = 0];
-	optional double JECUnc = 9 [default = 0];
-	optional double L2L3ResJEC = 10 [default = 0];
-	optional double L3AbsJEC = 11 [default = 0];
-	optional double L2RelJEC = 12 [default = 0];
-	optional double L1OffJEC = 13 [default = 0];
-	optional double EMF = 14 [default = 0];
-	optional double resEMF = 15 [default = 0];
-	optional double HADF = 16 [default = 0];
-	optional int32 n90Hits = 17 [default = 0];
-	optional double fHPD = 18 [default = 0];
-	optional double fRBX = 19 [default = 0];
-	optional double SigmaEta = 20 [default = 0];
-	optional double SigmaPhi = 21 [default = 0];
+	optional double Eta = 8 [default = 0];
+	optional double Phi = 9 [default = 0];
+	optional double Pt = 10 [default = 0];
+	optional double PtRaw = 11 [default = 0];
+	optional double EnergyRaw = 12 [default = 0];
+	optional int32 PartonFlavour = 13 [default = 0];
+	optional double JECUnc = 14 [default = 0];
+	optional double L2L3ResJEC = 15 [default = 0];
+	optional double L3AbsJEC = 16 [default = 0];
+	optional double L2RelJEC = 17 [default = 0];
+	optional double L1OffJEC = 18 [default = 0];
+	optional double EMF = 19 [default = 0];
+	optional double resEMF = 20 [default = 0];
+	optional double HADF = 21 [default = 0];
+	optional int32 n90Hits = 22 [default = 0];
+	optional double fHPD = 23 [default = 0];
+	optional double fRBX = 24 [default = 0];
+	optional double SigmaEta = 25 [default = 0];
+	optional double SigmaPhi = 26 [default = 0];
 	
-	optional double TrackCountingHighEffBTag = 22 [default = 0];
-	optional double TrackCountingHighPurBTag = 23 [default = 0];
-	optional double SimpleSecondaryVertexHighEffBTag = 24 [default = 0];
-	optional double SimpleSecondaryVertexHighPurBTag = 25 [default = 0];
-	optional double JetProbabilityBTag = 26 [default = 0];
-	optional double JetBProbabilityBTag = 27 [default = 0];
+	optional double TrackCountingHighEffBTag = 27 [default = 0];
+	optional double TrackCountingHighPurBTag = 28 [default = 0];
+	optional double SimpleSecondaryVertexHighEffBTag = 29 [default = 0];
+	optional double SimpleSecondaryVertexHighPurBTag = 30 [default = 0];
+	optional double JetProbabilityBTag = 31 [default = 0];
+	optional double JetBProbabilityBTag = 32 [default = 0];
 	
-	optional double SoftElectronBJetTag = 28 [default = 0];
-	optional double SoftMuonBJetTag = 29 [default = 0];
-	optional double SoftMuonNoIPBJetTag = 30 [default = 0];
-	optional double CombinedSVBJetTag = 31 [default = 0];
-	optional double CombinedSVMVABJetTag = 32 [default = 0];
+	optional double SoftElectronBJetTag = 33 [default = 0];
+	optional double SoftMuonBJetTag = 34 [default = 0];
+	optional double SoftMuonNoIPBJetTag = 35 [default = 0];
+	optional double CombinedSVBJetTag = 36 [default = 0];
+	optional double CombinedSVMVABJetTag = 37 [default = 0];
 
-	optional int32 PassLooseID = 33 [default = 0];
-	optional int32 PassTightID = 34 [default = 0];
+	optional int32 PassLooseID = 38 [default = 0];
+	optional int32 PassTightID = 39 [default = 0];
 	
 	// only for PF JETS
-	optional double ChargedEmEnergyFraction = 35 [default = 0];
-	optional double ChargedHadronEnergyFraction = 36 [default = 0];
-	optional double ChargedMuEnergyFraction = 37 [default = 0];
-	optional double ElectronEnergyFraction = 38 [default = 0];
-	optional double MuonEnergyFraction = 39 [default = 0];
-	optional double NeutralEmEnergyFraction = 40 [default = 0];
-	optional double NeutralHadronEnergyFraction = 41 [default = 0];
-	optional double PhotonEnergyFraction = 42 [default = 0];
+	optional double ChargedEmEnergyFraction = 40 [default = 0];
+	optional double ChargedHadronEnergyFraction = 41 [default = 0];
+	optional double ChargedMuEnergyFraction = 42 [default = 0];
+	optional double ElectronEnergyFraction = 43 [default = 0];
+	optional double MuonEnergyFraction = 44 [default = 0];
+	optional double NeutralEmEnergyFraction = 45 [default = 0];
+	optional double NeutralHadronEnergyFraction = 46 [default = 0];
+	optional double PhotonEnergyFraction = 47 [default = 0];
 	
-	optional int32 ChargedHadronMultiplicity = 43 [default = 0];
-	optional int32 ChargedMultiplicity = 44 [default = 0];
-	optional int32 ElectronMultiplicity = 45 [default = 0];
-	optional int32 MuonMultiplicity = 46 [default = 0];
-	optional int32 NeutralHadronMultiplicity = 47 [default = 0];
-	optional int32 NeutralMultiplicity = 48 [default = 0];
-	optional int32 PhotonMultiplicity = 49 [default = 0];
-	optional int32 NConstituents = 50 [default = 0];
+	optional int32 ChargedHadronMultiplicity = 48 [default = 0];
+	optional int32 ChargedMultiplicity = 49 [default = 0];
+	optional int32 ElectronMultiplicity = 50 [default = 0];
+	optional int32 MuonMultiplicity = 51 [default = 0];
+	optional int32 NeutralHadronMultiplicity = 52 [default = 0];
+	optional int32 NeutralMultiplicity = 53 [default = 0];
+	optional int32 PhotonMultiplicity = 54 [default = 0];
+	optional int32 NConstituents = 55 [default = 0];
 	
-	optional double ChargedEmEnergyFractionRAW = 51 [default = 0];
-	optional double ChargedHadronEnergyFractionRAW = 52 [default = 0];
-	optional double NeutralEmEnergyFractionRAW = 53 [default = 0];
-	optional double NeutralHadronEnergyFractionRAW = 54 [default = 0];
+	optional double ChargedEmEnergyFractionRAW = 56 [default = 0];
+	optional double ChargedHadronEnergyFractionRAW = 57 [default = 0];
+	optional double NeutralEmEnergyFractionRAW = 58 [default = 0];
+	optional double NeutralHadronEnergyFractionRAW = 59 [default = 0];
 }
 
 message GenJet {
-	required Particle basic = 1;
-	optional double Eta = 2 [default = 0];
-	optional double Phi = 3 [default = 0];
-	optional double Pt = 4 [default = 0];
-	optional double EMF = 5 [default = 0];
-	optional double HADF = 6 [default = 0];
+	optional double Energy = 1 [default = 0];
+	optional double Px = 2 [default = 0];
+	optional double Py = 3 [default = 0];
+	optional double Pz = 4 [default = 0];
+	optional double Charge = 5 [default = 0];
+	optional double Mass = 6 [default = 0];
 	
-	
+	optional double Eta = 7 [default = 0];
+	optional double Phi = 8 [default = 0];
+	optional double Pt = 9 [default = 0];
+	optional double EMF = 10 [default = 0];
+	optional double HADF = 11 [default = 0];
 }
 
 message GenParticle {
-	required Particle basic = 1;
-	optional double Eta = 2 [default = 0];
-	optional double Phi = 3 [default = 0];
-	optional double Pt = 4 [default = 0];
-	optional int32 PdgId = 5 [default = 0];
+	optional double Energy = 1 [default = 0];
+	optional double Px = 2 [default = 0];
+	optional double Py = 3 [default = 0];
+	optional double Pz = 4 [default = 0];
+	optional double Charge = 5 [default = 0];
+	optional double Mass = 6 [default = 0];
 	
-	optional double VX = 6 [default = 0];
-	optional double VY = 7 [default = 0];
-	optional double VZ = 8 [default = 0];
+	optional double Eta = 7 [default = 0];
+	optional double Phi = 8 [default = 0];
+	optional double Pt = 9 [default = 0];
+	optional int32 PdgId = 10 [default = 0];
 	
-	optional int32 NumDaught = 9 [default = 0];
-	optional int32 Status = 10 [default = 0];
-	optional int32 MotherIndex = 11 [default = 0];
+	optional double VX = 11 [default = 0];
+	optional double VY = 12 [default = 0];
+	optional double VZ = 13 [default = 0];
+	
+	optional int32 NumDaught = 14 [default = 0];
+	optional int32 Status = 15 [default = 0];
+	optional int32 MotherIndex = 16 [default = 0];
 	}
 
 message Electron {
-	required Particle basic = 1;
+	optional double Energy = 1 [default = 0];
+	optional double Px = 2 [default = 0];
+	optional double Py = 3 [default = 0];
+	optional double Pz = 4 [default = 0];
+	optional double Charge = 5 [default = 0];
+	optional int32 Mass = 6 [default = 0];
 	
 	enum ElectronAlgorithm {
 		Calo = 0;
 		ParticleFlow = 1;
  	}
-	optional ElectronAlgorithm type = 2 [default = ParticleFlow];
+	optional ElectronAlgorithm type = 7 [default = ParticleFlow];
 	
-	optional double Eta = 3 [default = 0];
-	optional double Phi = 4 [default = 0];
-	optional double Pt = 5 [default = 0];
-	optional double Energy = 6 [default = 0];
-	optional double CaloEnergy = 7 [default = 0];
+	optional double Eta = 8 [default = 0];
+	optional double Phi = 9 [default = 0];
+	optional double Pt = 10 [default = 0];
+	//optional double Energy = 11 [default = 0];
+	optional double CaloEnergy = 12 [default = 0];
 	
-	optional double HoE = 8 [default = 0];
-	optional double eSeedClusterOverPout = 46 [default = 0];
-	optional double EoverP = 9 [default = 0];
-	optional double fbrem = 10 [default = 0];
-	optional double SigmaEtaEta = 11 [default = 0];
-	optional double SigmaIEtaIEta = 12 [default = 0];
-	optional double DeltaPhiTrkSC = 13 [default = 0];
-	optional double DeltaEtaTrkSC = 14 [default = 0];
+	optional double HoE = 13 [default = 0];
+	optional double eSeedClusterOverPout = 14 [default = 0];
+	optional double EoverP = 15 [default = 0];
+	optional double fbrem = 16 [default = 0];
+	optional double SigmaEtaEta = 17 [default = 0];
+	optional double SigmaIEtaIEta = 18 [default = 0];
+	optional double DeltaPhiTrkSC = 19 [default = 0];
+	optional double DeltaEtaTrkSC = 20 [default = 0];
 	
-	optional double TrkIso03 = 15 [default = 0];
-	optional double EcalIso03 = 16 [default = 0];
-	optional double HcalIso03 = 17 [default = 0];
-	optional double TrkIso = 18 [default = 0];
-	optional double EcalIso = 19 [default = 0];
-	optional double HcalIso = 20 [default = 0];
+	optional double TrkIso03 = 21 [default = 0];
+	optional double EcalIso03 = 22 [default = 0];
+	optional double HcalIso03 = 23 [default = 0];
+	optional double TrkIso = 24 [default = 0];
+	optional double EcalIso = 25 [default = 0];
+	optional double HcalIso = 26 [default = 0];
 	
-	optional double dB = 21 [default = 0];
-	optional int32 closestCtfTrackRef = 22 [default = 0];
-	optional double shFracInnerHits = 23 [default = 0];
+	optional double dB = 27 [default = 0];
+	optional int32 closestCtfTrackRef = 28 [default = 0];
+	optional double shFracInnerHits = 29 [default = 0];
 	
 	message GSFTrack {
 		optional double d0 = 1 [default = 0];
@@ -155,83 +162,95 @@ message Electron {
 		optional double Pt = 6 [default = 0];
 	}
 	
-	optional GSFTrack track = 24;
+	optional GSFTrack track = 30;
 	
 	
-	optional double EcalIsoHeep = 25 [default = 0];
-	optional double HcalIsoD1Heep = 26 [default = 0];
-	optional double HcalIsoD2Heep = 27 [default = 0];
-	optional double TrkIsoHeep = 28 [default = 0];
+	optional double EcalIsoHeep = 31 [default = 0];
+	optional double HcalIsoD1Heep = 32 [default = 0];
+	optional double HcalIsoD2Heep = 33 [default = 0];
+	optional double TrkIsoHeep = 34 [default = 0];
 	
-	optional int32 MissingHits = 29 [default = 0];
-	optional double Dist = 30 [default = 0];
-	optional double DCotTheta = 31 [default = 0];
+	optional int32 MissingHits = 35 [default = 0];
+	optional double Dist = 36 [default = 0];
+	optional double DCotTheta = 37 [default = 0];
 	
-	optional double SCEta = 32 [default = 0];
-	optional double SCPhi = 33 [default = 0];
-	optional double SCPt = 34 [default = 0];
-	optional double SCRawEnergy = 35 [default = 0];
+	optional double SCEta = 38 [default = 0];
+	optional double SCPhi = 39 [default = 0];
+	optional double SCPt = 40 [default = 0];
+	optional double SCRawEnergy = 41 [default = 0];
 	
-	optional int32 VtxIndex = 36 [default = 0];
-	optional double VtxDistXY = 37 [default = 0];
-	optional double VtxDistZ = 38 [default = 0];
+	optional int32 VtxIndex = 42 [default = 0];
+	optional double VtxDistXY = 43 [default = 0];
+	optional double VtxDistZ = 44 [default = 0];
 	
-	optional double VertexX = 39 [default = 0];
-	optional double VertexY = 40 [default = 0];
-	optional double VertexZ = 41 [default = 0];
+	optional double VertexX = 45 [default = 0];
+	optional double VertexY = 46 [default = 0];
+	optional double VertexZ = 47 [default = 0];
 	
-	optional int32 PassID = 42 [default = 0];
+	optional int32 PassID = 48 [default = 0];
 	
-	optional double PfChargedHadronIso = 43 [default = 0];
-	optional double PfNeutralHadronIso = 44 [default = 0];
-	optional double PFGammaIso = 45 [default = 0];
+	optional double PfChargedHadronIso = 49 [default = 0];
+	optional double PfNeutralHadronIso = 50 [default = 0];
+	optional double PFGammaIso = 51 [default = 0];
 }
 
 message Muon {
- required Particle basic = 1;
+ optional double Energy = 1 [default = 0];
+ optional double Px = 2 [default = 0];
+ optional double Py = 3 [default = 0];
+ optional double Pz = 4 [default = 0];
+ optional int32 Charge = 5 [default = 0];
+ optional double Mass = 6 [default = 0];
  
- optional double TrkIso03 = 2 [default = 0];
- optional double EcalIso03 = 3 [default = 0];
- optional double HcalIso03 = 4 [default = 0];
+ optional double TrkIso03 = 7 [default = 0];
+ optional double EcalIso03 = 8 [default = 0];
+ optional double HcalIso03 = 9 [default = 0];
  
- optional int32 isGoodGlobalMuon = 5 [default = 0];
+ optional int32 isGoodGlobalMuon = 10 [default = 0];
  
- optional double PfChargedHadronIso = 6 [default = 0];
- optional double PfNeutralHadronIso = 7 [default = 0];
- optional double PFGammaIso = 8 [default = 0];
+ optional double PfChargedHadronIso = 11 [default = 0];
+ optional double PfNeutralHadronIso = 12 [default = 0];
+ optional double PFGammaIso = 13 [default = 0];
  
- optional double Eta = 9 [default = 0];
- optional double Phi = 10 [default = 0];
- optional double Pt = 11 [default = 0];
- optional double P = 12 [default = 0];
+ optional double Eta = 14 [default = 0];
+ optional double Phi = 15 [default = 0];
+ optional double Pt = 16 [default = 0];
+ optional double P = 17 [default = 0];
  
- optional int32 TrkHits = 13 [default = 0];
- optional double TrkD0 = 14 [default = 0];
- optional double TrkD0Error = 15 [default = 0];
- optional double TrkDz = 16 [default = 0];
- optional double TrkDzError = 17 [default = 0];
- optional double GlobalChi2 = 18 [default = 0];
+ optional int32 TrkHits = 18 [default = 0];
+ optional double TrkD0 = 19 [default = 0];
+ optional double TrkD0Error = 20 [default = 0];
+ optional double TrkDz = 21 [default = 0];
+ optional double TrkDzError = 22 [default = 0];
+ optional double GlobalChi2 = 23 [default = 0];
  
- optional double TrkIso = 19 [default = 0];
- optional double EcalIso = 20 [default = 0];
- optional double HcalIso = 21 [default = 0];
- optional double HOIso = 22 [default = 0];
+ optional double TrkIso = 24 [default = 0];
+ optional double EcalIso = 25 [default = 0];
+ optional double HcalIso = 26 [default = 0];
+ optional double HOIso = 27 [default = 0];
  
- optional int32 VtxIndex = 23 [default = 0];
- optional double VtxDistXY = 24 [default = 0];
- optional double VtxDistZ = 25 [default = 0];
+ optional int32 VtxIndex = 28 [default = 0];
+ optional double VtxDistXY = 29 [default = 0];
+ optional double VtxDistZ = 30 [default = 0];
  
- optional double CocktailEta = 26 [default = 0];
- optional double CocktailPhi = 27 [default = 0];
- optional double CocktailPt = 28 [default = 0];
- optional double CocktailP = 29 [default = 0];
- optional int32 CocktailCharge = 30 [default = 0];
- optional int32 CocktailTrkHits = 31 [default = 0];
- optional double CocktailTrkD0 = 32 [default = 0];
- optional double CocktailTrkD0Error = 33 [default = 0];
- optional double CocktailTrkDz = 34 [default = 0];
- optional double CocktailTrkDzError = 35 [default = 0];
- optional double CocktailGlobalChi2 = 36 [default = 0];
+ optional double CocktailEta = 31 [default = 0];
+ optional double CocktailPhi = 32 [default = 0];
+ optional double CocktailPt = 33 [default = 0];
+ optional double CocktailP = 34 [default = 0];
+ optional int32 CocktailCharge = 35 [default = 0];
+ optional int32 CocktailTrkHits = 36 [default = 0];
+ optional double CocktailTrkD0 = 37 [default = 0];
+ optional double CocktailTrkD0Error = 38 [default = 0];
+ optional double CocktailTrkDz = 39 [default = 0];
+ optional double CocktailTrkDzError = 40 [default = 0];
+ optional double CocktailGlobalChi2 = 41 [default = 0];
+ 
+ enum MuonAlgorithm {
+		Default = 0;
+		ParticleFlow = 1;
+ 	}
+ 	
+ optional MuonAlgorithm type = 42 [default = ParticleFlow];
 }
 
 message MET {
@@ -245,6 +264,13 @@ message MET {
 	optional double ETUncorr = 7 [default = 0];
 	optional double PhiUncorr = 8 [default = 0];
 	optional double SumETUncorr = 9 [default = 0];
+	
+	enum METAlgorithm {
+		Calo = 0;
+		ParticleFlow = 1;
+ 	}
+ 	
+ 	optional METAlgorithm type = 10 [default = ParticleFlow];
 }
 
 message Vertex {
@@ -324,8 +350,8 @@ message GenEvent {
  repeated double PDFWeights = 3;
  repeated int32 PileUpInteractions = 4;
  repeated int32 PileUpOriginBX = 5;
- optional double GenMetExTrue = 6 [default = 0];
- optional double GenMetEyTrue = 7 [default = 0];
+ repeated double GenMETExTrue = 6;
+ repeated double GenMETEyTrue = 7;
  
  repeated GenJet genJets = 8;
  repeated GenParticle genParticles = 9;
