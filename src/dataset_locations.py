@@ -151,6 +151,7 @@ if method == 'phedex':
         if len(sites) > 1:
             add_duplicate(dataset)
 
+T2_duplicates = sorted(T2_duplicates)
 
 print '='*80
 print 'The following samples are available on more than one T2'
