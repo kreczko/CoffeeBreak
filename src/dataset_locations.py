@@ -1,16 +1,39 @@
 import json
 import subprocess
 from time import sleep
+# import urllib2
 
 JSON_output_file = 'files/dataset_locations.json'
 dataset_output_file = 'files/datasets.txt'
+TOP_T2_SITES = ['T2_DE_DESY', 'T2_BE_IIHE', 'T2_ES_IFCA', 'T2_FR_IPHC', 'T2_UK_SGrid_RALPP', 'T2_US_Nebraska']
 
+# https://cmsweb.cern.ch/phedex/datasvc/json/prod/subscriptions?create_since=0&group=top&node=T2_DE_DESY&node=T2_BE_IIHE&node=T2_ES_IFCA&node=T2_FR_IPHC&node=T2_UK_SGrid_RALPP&node=T2_US_Nebraska
 def ask_das(query):
     command = './src/das_client.py --query="%s" --format=json' % query
     p = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     result = p.stdout.read()
     
     return result
+
+def get_datasets_from_phedex(group = 'top', sites = TOP_T2_SITES):
+#     phedex_base_url = 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/subscriptions?create_since=0'
+#     nodes = '&'.join(['node=%s' % site for site in sites])
+#     phedex_query_url = phedex_base_url + '&group=' + group + '&' + nodes
+#     print phedex_query_url
+    input_file = open('files/phedex_request.txt')
+    input_JSON = ''.join(input_file.readlines())
+    data = json.loads(input_JSON)
+    datasets_and_locations = {}
+    
+    for item in data['phedex']['dataset']:
+        dataset = item['name']
+        sites = []
+        if item.has_key('subscription'):
+            subscriptions = item['subscription']
+            for sub in subscriptions:
+                sites.append(sub['node'])
+        datasets_and_locations[dataset] = sites
+    return datasets_and_locations 
 
 def get_datasets_from_wildcard(wildcard):
     query = "dataset dataset=%s | grep dataset.name" % wildcard
@@ -44,7 +67,7 @@ def get_dataset_locations(dataset):
     
     return sites
 
-def find_T2_duplicates(dataset_locations_json):
+def find_T2_duplicates(dataset_locations_json, T2_sites = []):
     input_file = open(dataset_locations_json)
     input_JSON = ''.join(input_file.readlines())
     data = json.loads(input_JSON)
@@ -54,8 +77,12 @@ def find_T2_duplicates(dataset_locations_json):
     for dataset, sites in data.iteritems():
         number_of_T2_sites = 0
         for site in sites:
-            if 'T2' in site:
-                number_of_T2_sites += 1
+            if T2_sites: 
+                if site in T2_sites:
+                    number_of_T2_sites += 1
+            else:#no list of sites provided
+                if 'T2' in site:
+                    number_of_T2_sites += 1
                 
         if number_of_T2_sites > 1:
             duplicates.append(dataset)
@@ -103,23 +130,39 @@ def main(input_file='files/test_datasets.txt'):
     output_file.close()    
 
 
-# you can first run with wildcards to get a complete list
-# input_file = 'files/datasets_with_wildcards.txt'
-input_file = dataset_output_file
-main(input_file)
+#from DAS
+# method = 'DAS'
+#from phedex
+method = 'phedex'
+T2_duplicates = []
+add_duplicate = T2_duplicates.append
+if method == 'DAS':
+    # you can first run with wildcards to get a complete list
+    # input_file = 'files/datasets_with_wildcards.txt'
+    input_file = dataset_output_file
+    main(input_file)
+    
+    T2_duplicates = find_T2_duplicates(JSON_output_file)
+    
+    
+if method == 'phedex':
+    datasets_and_locations = get_datasets_from_phedex(group = 'top', sites = TOP_T2_SITES)
+    for dataset, sites in datasets_and_locations.iteritems():
+        if len(sites) > 1:
+            add_duplicate(dataset)
 
-T2_duplicates = find_T2_duplicates(JSON_output_file)
+
 print '='*80
 print 'The following samples are available on more than one T2'
 print '='*80
 for i in T2_duplicates:
     print i
-    
+                    
 output_file = open('files/T2_duplicates.txt', 'w')
 for i in T2_duplicates:
     print>>output_file, i
 output_file.close()
-
-
+    
+    
 
 
