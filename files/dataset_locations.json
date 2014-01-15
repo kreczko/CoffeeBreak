@@ -1,0 +1,1403 @@
+{
+    "/DYJetsToLL_M-50_matchingdown_8TeV-madgraph/Summer12-START52_V9_FSIM-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/DYJetsToLL_M-50_matchingdown_8TeV-madgraph/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_DE_KIT_Buffer", 
+        "T1_DE_KIT_Disk", 
+        "T1_DE_KIT_MSS", 
+        "T1_US_FNAL_Disk", 
+        "T2_BE_UCL", 
+        "T2_DE_DESY", 
+        "T2_UK_SGrid_RALPP", 
+        "T2_US_Nebraska", 
+        "T3_US_FNALLPC"
+    ], 
+    "/SingleTop_stchannelComb_8TeV-aMCatNLO-herwig/Summer12_DR53X-PU_S10_START53_V7C-v1/AODSIM": [
+        "T1_ES_PIC_Buffer", 
+        "T1_ES_PIC_MSS", 
+        "T2_DE_DESY"
+    ], 
+    "/TBarToDilepton_tW-channel-DR_mass166_5_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TBarToDilepton_tW-channel-DR_mass166_5_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_FR_IPHC", 
+        "T2_US_Nebraska"
+    ], 
+    "/TBarToDilepton_tW-channel-DR_mass178_5_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v5/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TBarToDilepton_tW-channel-DR_mass178_5_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_FR_IPHC", 
+        "T2_US_Nebraska"
+    ], 
+    "/TBarToDilepton_tW-channel-DR_scaledown_8TeV-powheg-tauola/Summer12-PU_S7_START52_V9-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_MSS"
+    ], 
+    "/TBarToDilepton_tW-channel-DR_scaledown_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TBarToDilepton_tW-channel-DR_scaledown_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY", 
+        "T2_ES_IFCA"
+    ], 
+    "/TBarToDilepton_tW-channel-DR_scaleup_8TeV-powheg-tauola/Summer12-PU_S7_START52_V9-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_MSS"
+    ], 
+    "/TBarToDilepton_tW-channel-DR_scaleup_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TBarToDilepton_tW-channel-DR_scaleup_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY"
+    ], 
+    "/TBarToDilepton_tW-channel-DS_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_IT_CNAF_Buffer", 
+        "T1_IT_CNAF_Disk", 
+        "T1_IT_CNAF_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY"
+    ], 
+    "/TBarToLeptons_s-channel_mass166_5_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TBarToLeptons_s-channel_mass166_5_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_FR_IPHC", 
+        "T2_US_Nebraska"
+    ], 
+    "/TBarToLeptons_s-channel_mass178_5_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TBarToLeptons_s-channel_mass178_5_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_DE_DESY"
+    ], 
+    "/TBarToLeptons_s-channel_scaledown_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v5/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TBarToLeptons_s-channel_scaledown_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_DE_DESY", 
+        "T2_FR_IPHC", 
+        "T2_US_Nebraska"
+    ], 
+    "/TBarToLeptons_s-channel_scaleup_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TBarToLeptons_s-channel_scaleup_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_DE_DESY", 
+        "T2_FR_IPHC", 
+        "T2_US_Nebraska"
+    ], 
+    "/TBarToLeptons_t-channel_mass166_5_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TBarToLeptons_t-channel_mass166_5_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_FR_IPHC", 
+        "T2_US_Nebraska"
+    ], 
+    "/TBarToLeptons_t-channel_mass169_5_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS", 
+        "T2_EE_Estonia", 
+        "T2_UK_SGrid_RALPP", 
+        "T2_US_Nebraska"
+    ], 
+    "/TBarToLeptons_t-channel_mass171_5_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS", 
+        "T2_UK_SGrid_RALPP", 
+        "T2_US_Nebraska"
+    ], 
+    "/TBarToLeptons_t-channel_mass173_5_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS", 
+        "T2_UK_SGrid_RALPP", 
+        "T2_US_Nebraska"
+    ], 
+    "/TBarToLeptons_t-channel_mass175_5_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS", 
+        "T2_EE_Estonia", 
+        "T2_UK_SGrid_RALPP", 
+        "T2_US_Nebraska"
+    ], 
+    "/TBarToLeptons_t-channel_mass178_5_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TBarToLeptons_t-channel_mass178_5_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_ES_IFCA", 
+        "T2_US_Nebraska"
+    ], 
+    "/TBarToLeptons_t-channel_scaledown_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TBarToLeptons_t-channel_scaledown_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_DE_DESY", 
+        "T2_FR_IPHC", 
+        "T2_US_Nebraska"
+    ], 
+    "/TBarToLeptons_t-channel_scaleup_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TBarToLeptons_t-channel_scaleup_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY", 
+        "T2_EE_Estonia", 
+        "T2_ES_IFCA"
+    ], 
+    "/TBarToThadWlep_tW-channel-DR_mass166_5_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TBarToThadWlep_tW-channel-DR_mass166_5_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_FR_IPHC", 
+        "T2_US_Nebraska"
+    ], 
+    "/TBarToThadWlep_tW-channel-DR_mass178_5_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TBarToThadWlep_tW-channel-DR_mass178_5_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_FR_IPHC", 
+        "T2_US_Nebraska"
+    ], 
+    "/TBarToThadWlep_tW-channel-DR_scaledown_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TBarToThadWlep_tW-channel-DR_scaledown_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY"
+    ], 
+    "/TBarToThadWlep_tW-channel-DR_scaleup_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TBarToThadWlep_tW-channel-DR_scaleup_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY"
+    ], 
+    "/TBarToThadWlep_tW-channel-DS_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_IT_CNAF_Buffer", 
+        "T1_IT_CNAF_Disk", 
+        "T1_IT_CNAF_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY"
+    ], 
+    "/TBarToTlepWhad_tW-channel-DR_mass166_5_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v5/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TBarToTlepWhad_tW-channel-DR_mass166_5_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_ES_IFCA", 
+        "T2_US_Nebraska"
+    ], 
+    "/TBarToTlepWhad_tW-channel-DR_mass178_5_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TBarToTlepWhad_tW-channel-DR_mass178_5_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_FR_IPHC", 
+        "T2_US_Nebraska"
+    ], 
+    "/TBarToTlepWhad_tW-channel-DR_scaledown_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TBarToTlepWhad_tW-channel-DR_scaledown_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY"
+    ], 
+    "/TBarToTlepWhad_tW-channel-DR_scaleup_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TBarToTlepWhad_tW-channel-DR_scaleup_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY"
+    ], 
+    "/TBarToTlepWhad_tW-channel-DS_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_IT_CNAF_Buffer", 
+        "T1_IT_CNAF_Disk", 
+        "T1_IT_CNAF_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY"
+    ], 
+    "/TTGJets_8TeV-madgraph/Summer12-PU_S7_START52_V9-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_MSS", 
+        "T2_TW_Taiwan", 
+        "T2_US_Florida"
+    ], 
+    "/TTGJets_8TeV-madgraph/Summer12_DR53X-PU_RD1_START53_V7N-v1/AODSIM": [
+        "T1_DE_KIT_Buffer", 
+        "T1_DE_KIT_Disk", 
+        "T1_DE_KIT_MSS", 
+        "T2_US_MIT"
+    ], 
+    "/TTGJets_8TeV-madgraph/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_DE_DESY", 
+        "T2_US_UCSD"
+    ], 
+    "/TTGJets_8TeV-madgraph/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_DE_DESY", 
+        "T2_ES_IFCA", 
+        "T2_TW_Taiwan", 
+        "T2_US_Nebraska"
+    ], 
+    "/TTH_HToZG_M-125_8TeV-pythia6/Summer12-PU_S7_START52_V9-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS", 
+        "T2_TW_Taiwan"
+    ], 
+    "/TTH_HToZG_M-125_8TeV-pythia6/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_TW_Taiwan", 
+        "T2_US_Nebraska", 
+        "T2_US_Wisconsin"
+    ], 
+    "/TTH_HToZG_M-140_8TeV-pythia6/Summer12-PU_S7_START52_V9-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS", 
+        "T2_TW_Taiwan", 
+        "T2_UK_London_IC"
+    ], 
+    "/TTH_HToZG_M-140_8TeV-pythia6/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_TW_Taiwan", 
+        "T2_US_Nebraska", 
+        "T2_US_Wisconsin"
+    ], 
+    "/TTH_HToZG_M-160_8TeV-pythia6/Summer12-PU_S7_START52_V9-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TTH_HToZG_M-160_8TeV-pythia6/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_TW_Taiwan", 
+        "T2_US_Nebraska"
+    ], 
+    "/TTJetsTocZbW_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7C-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY"
+    ], 
+    "/TTJets_DileptDecays_8TeV-sherpa/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS", 
+        "T2_DE_DESY", 
+        "T2_UK_SGrid_RALPP"
+    ], 
+    "/TTJets_FullLeptMGDecays_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7C-v2/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY", 
+        "T2_ES_IFCA", 
+        "T2_US_Nebraska", 
+        "T2_US_Wisconsin", 
+        "T3_KR_UOS"
+    ], 
+    "/TTJets_FullLeptMGDecays_TuneP11TeV_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY", 
+        "T2_ES_IFCA"
+    ], 
+    "/TTJets_FullLeptMGDecays_TuneP11_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY", 
+        "T2_US_Nebraska"
+    ], 
+    "/TTJets_FullLeptMGDecays_TuneP11mpiHi_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_DE_DESY", 
+        "T2_FR_IPHC"
+    ], 
+    "/TTJets_FullLeptMGDecays_TuneP11noCR_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY", 
+        "T2_US_Nebraska"
+    ], 
+    "/TTJets_HadronicMGDecays_TuneP11TeV_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_DE_DESY", 
+        "T2_FR_IPHC"
+    ], 
+    "/TTJets_HadronicMGDecays_TuneP11_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_DE_DESY", 
+        "T2_UK_SGrid_RALPP"
+    ], 
+    "/TTJets_HadronicMGDecays_TuneP11mpiHi_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_DE_DESY", 
+        "T2_ES_IFCA", 
+        "T2_FR_IPHC"
+    ], 
+    "/TTJets_HadronicMGDecays_TuneP11noCR_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_DE_DESY", 
+        "T2_ES_IFCA", 
+        "T2_US_Nebraska"
+    ], 
+    "/TTJets_MassiveBinDECAY_TuneZ2star_8TeV-madgraph-tauola/Summer12-PU_S6_START52_V9-v2/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_MSS"
+    ], 
+    "/TTJets_MassiveBinDECAY_TuneZ2star_8TeV-madgraph-tauola/Summer12-PU_S7_START52_V9-v4/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_MSS"
+    ], 
+    "/TTJets_MassiveBinDECAY_TuneZ2star_8TeV-madgraph-tauola/Summer12-START52_V9_FSIM-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TTJets_MassiveBinDECAY_TuneZ2star_8TeV-madgraph-tauola/Summer12-START53_V7C_FSIM-v2/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS", 
+        "T3_US_Colorado"
+    ], 
+    "/TTJets_MassiveBinDECAY_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T2_BE_UCL", 
+        "T2_DE_DESY", 
+        "T2_EE_Estonia", 
+        "T2_ES_IFCA", 
+        "T2_FR_IPHC", 
+        "T2_UK_London_IC", 
+        "T2_US_Florida", 
+        "T2_US_Nebraska", 
+        "T3_ES_Oviedo", 
+        "T3_US_FNALLPC"
+    ], 
+    "/TTJets_MassiveBinDECAY_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7A-v2/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T1_US_FNAL_Disk", 
+        "T2_BE_UCL", 
+        "T2_DE_DESY", 
+        "T2_EE_Estonia", 
+        "T2_UK_SGrid_RALPP", 
+        "T3_US_FNALLPC"
+    ], 
+    "/TTJets_MassiveBinDECAY_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7C-v1/AODSIM": [
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T1_US_FNAL_Disk", 
+        "T2_DE_DESY", 
+        "T2_ES_IFCA", 
+        "T2_FR_IPHC", 
+        "T2_IT_Pisa", 
+        "T2_US_Purdue", 
+        "T3_US_FNALLPC"
+    ], 
+    "/TTJets_SemiLeptDecays_8TeV-sherpa/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS", 
+        "T2_BE_IIHE", 
+        "T2_US_Nebraska", 
+        "T2_US_UCSD"
+    ], 
+    "/TTJets_SemiLeptMGDecays_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V19_ext1-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T3_US_Colorado"
+    ], 
+    "/TTJets_SemiLeptMGDecays_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V19_ext2-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T3_US_Colorado"
+    ], 
+    "/TTJets_SemiLeptMGDecays_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7C-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY", 
+        "T3_KR_UOS"
+    ], 
+    "/TTJets_SemiLeptMGDecays_8TeV-madgraph/Summer12_DR53X-PU_RD1_START53_V7N-v1/AODSIM": [
+        "T1_DE_KIT_Buffer", 
+        "T1_DE_KIT_Disk", 
+        "T1_DE_KIT_MSS", 
+        "T2_DE_DESY", 
+        "T2_EE_Estonia", 
+        "T2_US_Nebraska"
+    ], 
+    "/TTJets_SemiLeptMGDecays_8TeV-madgraph/Summer12_DR53X-PU_S10_START53_V7A_ext-v1/AODSIM": [
+        "T1_DE_KIT_Buffer", 
+        "T1_DE_KIT_Disk", 
+        "T1_US_FNAL_Disk", 
+        "T2_DE_DESY", 
+        "T2_EE_Estonia", 
+        "T2_ES_CIEMAT", 
+        "T2_IT_Bari", 
+        "T2_US_Wisconsin", 
+        "T3_US_FNALLPC"
+    ], 
+    "/TTJets_SemiLeptMGDecays_TuneP11TeV_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY", 
+        "T2_UK_SGrid_RALPP"
+    ], 
+    "/TTJets_SemiLeptMGDecays_TuneP11_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY", 
+        "T2_US_Nebraska"
+    ], 
+    "/TTJets_SemiLeptMGDecays_TuneP11noCR_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY", 
+        "T2_FR_IPHC"
+    ], 
+    "/TTJets_mass161_5_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY", 
+        "T2_UK_SGrid_RALPP", 
+        "T3_US_Brown"
+    ], 
+    "/TTJets_mass163_5_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_DE_DESY", 
+        "T2_FR_IPHC", 
+        "T3_US_Brown"
+    ], 
+    "/TTJets_mass166_5_TuneZ2star_8TeV-madgraph-tauola/Summer12-PU_S7_START52_V9-v1/AODSIM": [
+        "T1_DE_KIT_Buffer", 
+        "T1_DE_KIT_MSS"
+    ], 
+    "/TTJets_mass166_5_TuneZ2star_8TeV-madgraph-tauola/Summer12-START52_V9_FSIM-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TTJets_mass166_5_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_DE_KIT_Buffer", 
+        "T1_DE_KIT_Disk", 
+        "T1_DE_KIT_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY", 
+        "T2_IN_TIFR", 
+        "T2_UK_SGrid_RALPP", 
+        "T3_US_Brown"
+    ], 
+    "/TTJets_mass169_5_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_DE_DESY", 
+        "T2_EE_Estonia", 
+        "T2_FR_IPHC", 
+        "T3_US_Brown"
+    ], 
+    "/TTJets_mass175_5_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_BR_SPRACE", 
+        "T2_DE_DESY", 
+        "T2_EE_Estonia", 
+        "T2_FR_IPHC", 
+        "T3_US_Brown"
+    ], 
+    "/TTJets_mass178_5_TuneZ2star_8TeV-madgraph-tauola/Summer12-PU_S7_START52_V9-v1/AODSIM": [
+        "T1_DE_KIT_Buffer", 
+        "T1_DE_KIT_MSS"
+    ], 
+    "/TTJets_mass178_5_TuneZ2star_8TeV-madgraph-tauola/Summer12-START52_V9_FSIM-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TTJets_mass178_5_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_DE_KIT_Buffer", 
+        "T1_DE_KIT_Disk", 
+        "T1_DE_KIT_MSS", 
+        "T2_DE_DESY", 
+        "T2_UK_SGrid_RALPP", 
+        "T2_US_Nebraska", 
+        "T3_US_Brown"
+    ], 
+    "/TTJets_mass181_5_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_DE_DESY", 
+        "T2_FR_IPHC", 
+        "T3_US_Brown"
+    ], 
+    "/TTJets_mass184_5_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY", 
+        "T2_UK_SGrid_RALPP", 
+        "T3_US_Brown"
+    ], 
+    "/TTJets_matchingdown_TuneZ2star_8TeV-madgraph-tauola/Summer12-PU_S7_START52_V9-v2/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TTJets_matchingdown_TuneZ2star_8TeV-madgraph-tauola/Summer12-START52_V9_FSIM-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TTJets_matchingdown_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS", 
+        "T1_US_FNAL_Disk", 
+        "T2_BE_UCL", 
+        "T2_DE_DESY", 
+        "T2_ES_IFCA", 
+        "T2_UK_SGrid_RALPP", 
+        "T3_US_FNALLPC"
+    ], 
+    "/TTJets_scaledown_TuneZ2star_8TeV-madgraph-tauola/Summer12-PU_S7_START52_V9-v2/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS"
+    ], 
+    "/TTJets_scaledown_TuneZ2star_8TeV-madgraph-tauola/Summer12-START52_V9_FSIM-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TTJets_scaledown_TuneZ2star_8TeV-madgraph-tauola/Summer12-START53_V7C_FSIM-v2/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TTJets_scaledown_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS", 
+        "T1_US_FNAL_Disk", 
+        "T2_BE_UCL", 
+        "T2_DE_DESY", 
+        "T2_FR_IPHC", 
+        "T2_US_Nebraska", 
+        "T3_US_FNALLPC"
+    ], 
+    "/TTJets_scaleup_TuneZ2star_8TeV-madgraph-tauola/Summer12-PU_S7_START52_V9-v2/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TTJets_scaleup_TuneZ2star_8TeV-madgraph-tauola/Summer12-START52_V9_FSIM-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TTJets_scaleup_TuneZ2star_8TeV-madgraph-tauola/Summer12-START53_V7C_FSIM-v2/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TTJets_scaleup_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS", 
+        "T1_US_FNAL_Disk", 
+        "T2_BE_IIHE", 
+        "T2_BE_UCL", 
+        "T2_DE_DESY", 
+        "T2_UK_SGrid_RALPP", 
+        "T3_US_FNALLPC"
+    ], 
+    "/TTTT_TuneZ2star_8TeV-madgraph-tauola/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TTTT_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_DE_KIT_Buffer", 
+        "T1_DE_KIT_Disk", 
+        "T1_DE_KIT_MSS", 
+        "T2_BE_IIHE", 
+        "T2_US_Nebraska"
+    ], 
+    "/TTWJets_8TeV-madgraph/Summer12-PU_S7_START52_V9-v2/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_MSS"
+    ], 
+    "/TTWJets_8TeV-madgraph/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T2_BE_IIHE", 
+        "T2_BE_UCL", 
+        "T2_DE_DESY", 
+        "T2_EE_Estonia", 
+        "T2_ES_IFCA", 
+        "T2_TW_Taiwan", 
+        "T2_US_Florida", 
+        "T3_FR_IPNL", 
+        "T3_US_FNALLPC"
+    ], 
+    "/TT_noCorr_8TeV-mcatnlo/Summer12_DR53X-PU_S10_START53_V7C-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY"
+    ], 
+    "/TToBENu_anomWtb-0100_t-channel_TuneZ2star_8TeV-comphep/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TToBENu_anomWtb-0100_t-channel_TuneZ2star_8TeV-comphep/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_EE_Estonia"
+    ], 
+    "/TToBENu_anomWtb-0100_t-channel_TuneZ2star_8TeV-comphep/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_DE_KIT_Buffer", 
+        "T1_DE_KIT_Disk", 
+        "T1_DE_KIT_MSS", 
+        "T2_BE_IIHE", 
+        "T2_FR_IPHC"
+    ], 
+    "/TToBENu_anomWtb-unphys_t-channel_TuneZ2star_8TeV-comphep/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TToBENu_anomWtb-unphys_t-channel_TuneZ2star_8TeV-comphep/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_DE_KIT_Buffer", 
+        "T1_DE_KIT_Disk", 
+        "T1_DE_KIT_MSS", 
+        "T2_DE_DESY", 
+        "T2_UK_SGrid_RALPP"
+    ], 
+    "/TToBENu_t-channel_TuneZ2star_8TeV-comphep/Summer12-START52_V9_FSIM-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_MSS"
+    ], 
+    "/TToBENu_t-channel_TuneZ2star_8TeV-comphep/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_DE_DESY", 
+        "T2_US_Nebraska"
+    ], 
+    "/TToBLNu_anomWtb-0100_s-channel_TuneZ2star_8TeV-comphep/Summer12-START52_V9_FSIM-v5/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TToBLNu_anomWtb-0100_s-channel_TuneZ2star_8TeV-comphep/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_DE_KIT_Buffer", 
+        "T1_DE_KIT_Disk", 
+        "T1_DE_KIT_MSS", 
+        "T2_BE_IIHE", 
+        "T2_US_Nebraska"
+    ], 
+    "/TToBLNu_anomWtb-unphys_s-channel_TuneZ2star_8TeV-comphep/Summer12-START52_V9_FSIM-v5/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TToBLNu_anomWtb-unphys_s-channel_TuneZ2star_8TeV-comphep/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_DE_KIT_Buffer", 
+        "T1_DE_KIT_Disk", 
+        "T1_DE_KIT_MSS", 
+        "T2_DE_DESY", 
+        "T2_UK_SGrid_RALPP"
+    ], 
+    "/TToBLNu_s-channel_TuneZ2star_8TeV-comphep/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_DE_KIT_Buffer", 
+        "T1_DE_KIT_Disk", 
+        "T1_DE_KIT_MSS", 
+        "T2_DE_DESY", 
+        "T2_UK_SGrid_RALPP"
+    ], 
+    "/TToBMuNu_anomWtb-0100_t-channel_TuneZ2star_8TeV-comphep/Summer12-START52_V9_FSIM-v5/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TToBMuNu_anomWtb-0100_t-channel_TuneZ2star_8TeV-comphep/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_DE_KIT_Buffer", 
+        "T1_DE_KIT_Disk", 
+        "T1_DE_KIT_MSS", 
+        "T2_BE_IIHE", 
+        "T2_US_Nebraska"
+    ], 
+    "/TToBMuNu_anomWtb-unphys_t-channel_TuneZ2star_8TeV-comphep/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TToBMuNu_anomWtb-unphys_t-channel_TuneZ2star_8TeV-comphep/Summer12_DR53X-PU_S10_START53_V19-v2/AODSIM": [
+        "T1_IT_CNAF_Disk", 
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_EE_Estonia"
+    ], 
+    "/TToBMuNu_anomWtb-unphys_t-channel_TuneZ2star_8TeV-comphep/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_DE_KIT_Buffer", 
+        "T1_DE_KIT_Disk", 
+        "T1_DE_KIT_MSS", 
+        "T2_BE_IIHE", 
+        "T2_US_Nebraska"
+    ], 
+    "/TToBMuNu_t-channel_TuneZ2star_8TeV-comphep/Summer12-START52_V9_FSIM-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_MSS"
+    ], 
+    "/TToBMuNu_t-channel_TuneZ2star_8TeV-comphep/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_FR_IPHC"
+    ], 
+    "/TToBTauNu_anomWtb-0100_t-channel_TuneZ2star_8TeV-comphep/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TToBTauNu_anomWtb-0100_t-channel_TuneZ2star_8TeV-comphep/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_DE_KIT_Buffer", 
+        "T1_DE_KIT_Disk", 
+        "T1_DE_KIT_MSS", 
+        "T2_DE_DESY", 
+        "T2_UK_SGrid_RALPP"
+    ], 
+    "/TToBTauNu_anomWtb-unphys_t-channel_TuneZ2star_8TeV-comphep/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TToBTauNu_anomWtb-unphys_t-channel_TuneZ2star_8TeV-comphep/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_DE_KIT_Buffer", 
+        "T1_DE_KIT_Disk", 
+        "T1_DE_KIT_MSS", 
+        "T2_BE_IIHE", 
+        "T2_FR_IPHC"
+    ], 
+    "/TToBTauNu_t-channel_TuneZ2star_8TeV-comphep/Summer12-START52_V9_FSIM-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_MSS"
+    ], 
+    "/TToBTauNu_t-channel_TuneZ2star_8TeV-comphep/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_FR_IPHC"
+    ], 
+    "/TToDilepton_tW-channel-DR_mass166_5_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TToDilepton_tW-channel-DR_mass166_5_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_FR_IPHC", 
+        "T2_US_Nebraska"
+    ], 
+    "/TToDilepton_tW-channel-DR_mass178_5_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v5/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TToDilepton_tW-channel-DR_mass178_5_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_FR_IPHC", 
+        "T2_US_Nebraska"
+    ], 
+    "/TToDilepton_tW-channel-DR_scaledown_8TeV-powheg-tauola/Summer12-PU_S7_START52_V9-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_MSS"
+    ], 
+    "/TToDilepton_tW-channel-DR_scaledown_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TToDilepton_tW-channel-DR_scaledown_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY", 
+        "T2_ES_IFCA"
+    ], 
+    "/TToDilepton_tW-channel-DR_scaleup_8TeV-powheg-tauola/Summer12-PU_S7_START52_V9-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_MSS"
+    ], 
+    "/TToDilepton_tW-channel-DR_scaleup_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v5/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TToDilepton_tW-channel-DR_scaleup_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY"
+    ], 
+    "/TToDilepton_tW-channel-DS_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_IT_CNAF_Buffer", 
+        "T1_IT_CNAF_Disk", 
+        "T1_IT_CNAF_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY", 
+        "T2_US_Nebraska"
+    ], 
+    "/TToLeptons_s-channel_mass166_5_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v5/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TToLeptons_s-channel_mass166_5_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_ES_IFCA"
+    ], 
+    "/TToLeptons_s-channel_mass178_5_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v5/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TToLeptons_s-channel_mass178_5_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_FR_IPHC", 
+        "T2_US_Nebraska"
+    ], 
+    "/TToLeptons_s-channel_scaledown_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v5/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TToLeptons_s-channel_scaledown_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY", 
+        "T2_ES_IFCA"
+    ], 
+    "/TToLeptons_s-channel_scaleup_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v5/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TToLeptons_s-channel_scaleup_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_DE_DESY", 
+        "T2_FR_IPHC", 
+        "T2_US_Nebraska"
+    ], 
+    "/TToLeptons_t-channel_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TToLeptons_t-channel_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_IT_CNAF_Buffer", 
+        "T1_IT_CNAF_Disk", 
+        "T1_IT_CNAF_MSS", 
+        "T2_DE_DESY", 
+        "T2_EE_Estonia", 
+        "T2_IT_Pisa", 
+        "T2_IT_Rome", 
+        "T2_US_Florida"
+    ], 
+    "/TToLeptons_t-channel_mass166_5_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TToLeptons_t-channel_mass166_5_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_FR_IPHC", 
+        "T2_US_Nebraska"
+    ], 
+    "/TToLeptons_t-channel_mass169_5_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS", 
+        "T2_DE_DESY", 
+        "T2_EE_Estonia"
+    ], 
+    "/TToLeptons_t-channel_mass171_5_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS", 
+        "T2_DE_DESY"
+    ], 
+    "/TToLeptons_t-channel_mass173_5_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS", 
+        "T2_DE_DESY"
+    ], 
+    "/TToLeptons_t-channel_mass175_5_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS", 
+        "T2_DE_DESY", 
+        "T2_EE_Estonia"
+    ], 
+    "/TToLeptons_t-channel_mass178_5_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TToLeptons_t-channel_mass178_5_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_FR_IPHC", 
+        "T2_US_Nebraska"
+    ], 
+    "/TToLeptons_t-channel_scaledown_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v5/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TToLeptons_t-channel_scaledown_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY"
+    ], 
+    "/TToLeptons_t-channel_scaleup_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TToLeptons_t-channel_scaleup_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY", 
+        "T2_ES_IFCA"
+    ], 
+    "/TToThadWlep_tW-channel-DR_mass166_5_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TToThadWlep_tW-channel-DR_mass166_5_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_FR_IPHC", 
+        "T2_US_Nebraska"
+    ], 
+    "/TToThadWlep_tW-channel-DR_mass178_5_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TToThadWlep_tW-channel-DR_mass178_5_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_FR_IPHC", 
+        "T2_US_Nebraska"
+    ], 
+    "/TToThadWlep_tW-channel-DR_scaledown_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TToThadWlep_tW-channel-DR_scaledown_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY"
+    ], 
+    "/TToThadWlep_tW-channel-DR_scaleup_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v5/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TToThadWlep_tW-channel-DR_scaleup_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY", 
+        "T2_ES_IFCA"
+    ], 
+    "/TToTlepWhad_tW-channel-DR_mass166_5_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v5/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TToTlepWhad_tW-channel-DR_mass166_5_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_FR_IPHC", 
+        "T2_US_Nebraska"
+    ], 
+    "/TToTlepWhad_tW-channel-DR_mass178_5_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v5/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TToTlepWhad_tW-channel-DR_mass178_5_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_FR_IPHC", 
+        "T2_US_Nebraska"
+    ], 
+    "/TToTlepWhad_tW-channel-DR_scaledown_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TToTlepWhad_tW-channel-DR_scaledown_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY"
+    ], 
+    "/TToTlepWhad_tW-channel-DR_scaleup_8TeV-powheg-tauola/Summer12-START52_V9_FSIM-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/TToTlepWhad_tW-channel-DR_scaleup_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_UK_RAL_Buffer", 
+        "T1_UK_RAL_Disk", 
+        "T1_UK_RAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_DESY"
+    ], 
+    "/T_s-channel_TuneZ2star_8TeV-powheg-tauola/Summer12-PU_S7_START52_V9-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS", 
+        "T2_BR_SPRACE", 
+        "T2_UK_London_IC"
+    ], 
+    "/T_s-channel_TuneZ2star_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_BE_UCL", 
+        "T2_DE_DESY", 
+        "T2_EE_Estonia", 
+        "T2_US_Nebraska", 
+        "T2_US_Wisconsin"
+    ], 
+    "/T_t-channel_TuneZ2star_8TeV-powheg-tauola/Summer12-PU_S7_START52_V9-v1/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS", 
+        "T1_US_FNAL_Disk", 
+        "T2_CN_Beijing", 
+        "T3_US_FNALLPC"
+    ], 
+    "/T_t-channel_TuneZ2star_8TeV-powheg-tauola/Summer12-PU_S7_START52_V9-v2/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_TW_Taiwan"
+    ], 
+    "/T_t-channel_TuneZ2star_8TeV-powheg-tauola/Summer12-PU_S7_START52_V9-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/T_t-channel_TuneZ2star_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_BE_UCL", 
+        "T2_DE_DESY", 
+        "T2_EE_Estonia", 
+        "T2_UK_SGrid_RALPP", 
+        "T2_US_Wisconsin"
+    ], 
+    "/T_t-channel_TuneZ2star_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v2/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS", 
+        "T2_BE_IIHE", 
+        "T2_EE_Estonia", 
+        "T2_FR_IPHC"
+    ], 
+    "/T_t-channel_TuneZ2star_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_DE_RWTH", 
+        "T2_US_Nebraska", 
+        "T2_US_Wisconsin"
+    ], 
+    "/T_tW-channel-DR_TuneZ2star_8TeV-powheg-tauola/Summer12-PU_S7_START52_V9-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS", 
+        "T2_BR_SPRACE", 
+        "T2_CH_CSCS", 
+        "T2_ES_CIEMAT", 
+        "T2_ES_IFCA", 
+        "T3_CH_PSI"
+    ], 
+    "/T_tW-channel-DR_TuneZ2star_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_BE_UCL", 
+        "T2_BR_SPRACE", 
+        "T2_DE_DESY", 
+        "T2_EE_Estonia", 
+        "T2_ES_CIEMAT", 
+        "T2_UK_SGrid_RALPP"
+    ], 
+    "/Tbar_s-channel_TuneZ2star_8TeV-powheg-tauola/Summer12-PU_S7_START52_V9-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/Tbar_s-channel_TuneZ2star_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_BE_UCL", 
+        "T2_DE_DESY", 
+        "T2_EE_Estonia", 
+        "T2_US_Nebraska", 
+        "T2_US_Wisconsin"
+    ], 
+    "/Tbar_t-channel_TuneZ2star_8TeV-powheg-tauola/Summer12-PU_S7_START52_V9-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS", 
+        "T2_BE_UCL", 
+        "T2_BR_SPRACE", 
+        "T2_CH_CSCS", 
+        "T3_CH_PSI"
+    ], 
+    "/Tbar_t-channel_TuneZ2star_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_Disk", 
+        "T1_US_FNAL_MSS", 
+        "T2_BE_IIHE", 
+        "T2_BE_UCL", 
+        "T2_DE_DESY", 
+        "T2_EE_Estonia", 
+        "T2_US_Nebraska", 
+        "T2_US_Wisconsin"
+    ], 
+    "/W2JetsToLNu_matchingdown_8TeV-madgraph/Summer12-START53_V7C_FSIM-v4/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS", 
+        "T1_US_FNAL_Disk", 
+        "T2_DE_DESY", 
+        "T3_US_FNALLPC"
+    ], 
+    "/W2JetsToLNu_matchingup_8TeV-madgraph/Summer12-START53_V7C_FSIM-v4/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS", 
+        "T1_US_FNAL_Disk", 
+        "T2_DE_DESY", 
+        "T3_US_FNALLPC"
+    ], 
+    "/W2JetsToLNu_scaledown_8TeV-madgraph/Summer12-START53_V7C_FSIM-v4/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS", 
+        "T2_DE_DESY"
+    ], 
+    "/W2JetsToLNu_scaleup_8TeV-madgraph/Summer12-START53_V7C_FSIM-v5/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS", 
+        "T2_DE_DESY"
+    ], 
+    "/W3JetsToLNu_matchingdown_8TeV-madgraph/Summer12-START53_V7C_FSIM-v4/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS", 
+        "T1_US_FNAL_Disk", 
+        "T2_BE_IIHE", 
+        "T3_US_FNALLPC"
+    ], 
+    "/W3JetsToLNu_matchingup_8TeV-madgraph/Summer12-START53_V7C_FSIM-v4/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS", 
+        "T1_US_FNAL_Disk", 
+        "T2_BE_IIHE", 
+        "T3_US_FNALLPC"
+    ], 
+    "/W3JetsToLNu_scaledown_8TeV-madgraph/Summer12-START53_V7C_FSIM-v4/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS", 
+        "T2_BE_IIHE"
+    ], 
+    "/W3JetsToLNu_scaleup_8TeV-madgraph/Summer12-START53_V7C_FSIM-v4/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS", 
+        "T2_BE_IIHE"
+    ], 
+    "/W4JetsToLNu_matchingdown_8TeV-madgraph/Summer12-START53_V7C_FSIM-v4/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS", 
+        "T1_US_FNAL_Disk", 
+        "T2_ES_IFCA", 
+        "T3_US_FNALLPC"
+    ], 
+    "/W4JetsToLNu_matchingup_8TeV-madgraph/Summer12-START53_V7C_FSIM-v4/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS", 
+        "T1_US_FNAL_Disk", 
+        "T2_ES_IFCA", 
+        "T3_US_FNALLPC"
+    ], 
+    "/W4JetsToLNu_scaledown_8TeV-madgraph/Summer12-START53_V7C_FSIM-v4/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS", 
+        "T2_BE_IIHE", 
+        "T2_ES_IFCA"
+    ], 
+    "/W4JetsToLNu_scaleup_8TeV-madgraph/Summer12-START53_V7C_FSIM-v4/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS", 
+        "T2_BE_IIHE", 
+        "T2_ES_IFCA"
+    ], 
+    "/WJetsToLNu_matchingup_8TeV-madgraph-tauola/Summer12-PU_S7_START52_V9-v2/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS"
+    ], 
+    "/WJetsToLNu_matchingup_8TeV-madgraph-tauola/Summer12-START52_V9_FSIM-v2/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/WJetsToLNu_matchingup_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS", 
+        "T1_US_FNAL_Disk", 
+        "T2_BE_IIHE", 
+        "T2_BE_UCL", 
+        "T2_DE_DESY", 
+        "T2_EE_Estonia", 
+        "T2_US_Nebraska", 
+        "T3_US_FNALLPC"
+    ], 
+    "/WJetsToLNu_scaledown_8TeV-madgraph-tauola/Summer12-PU_S7_START52_V9-v2/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/WJetsToLNu_scaledown_8TeV-madgraph-tauola/Summer12-START52_V9_FSIM-v1/AODSIM": [
+        "T1_US_FNAL_Buffer", 
+        "T1_US_FNAL_MSS"
+    ], 
+    "/WJetsToLNu_scaledown_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
+        "T1_FR_CCIN2P3_Buffer", 
+        "T1_FR_CCIN2P3_MSS", 
+        "T1_US_FNAL_Disk", 
+        "T2_DE_DESY", 
+        "T2_EE_Estonia", 
+        "T2_UK_SGrid_RALPP", 
+        "T3_US_FNALLPC"
+    ]
+}
