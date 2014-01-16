@@ -150,6 +150,11 @@ if method == 'phedex':
     for dataset, sites in datasets_and_locations.iteritems():
         if len(sites) > 1:
             add_duplicate(dataset)
+    
+    # create JSON {<dataset>: [<site1>, <site2>]}
+    output_file = open(JSON_output_file, 'w')
+    output_file.write(json.dumps(datasets_and_locations, indent=4, sort_keys=True))
+    output_file.close() 
 
 T2_duplicates = sorted(T2_duplicates)
 
