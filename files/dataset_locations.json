@@ -1,10 +1,8 @@
 {
     "/DY1JetsToLL_M-50_scaledown_8TeV-madgraph/Summer12-START53_V7C-v1/AODSIM": [
-        "T2_FR_IPHC", 
         "T2_DE_DESY"
     ], 
     "/DY1JetsToLL_M-50_scaleup_8TeV-madgraph/Summer12-START53_V7C-v1/AODSIM": [
-        "T2_FR_IPHC", 
         "T2_DE_DESY"
     ], 
     "/DY2JetsToLL_M-50_8TeV_ext-madgraph/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
@@ -12,23 +10,34 @@
         "T2_US_Nebraska"
     ], 
     "/DY2JetsToLL_M-50_scaledown_8TeV-madgraph/Summer12-START53_V7C-v1/AODSIM": [
-        "T2_FR_IPHC", 
         "T2_DE_DESY"
     ], 
     "/DY2JetsToLL_M-50_scaleup_8TeV-madgraph/Summer12-START53_V7C-v1/AODSIM": [
-        "T2_FR_IPHC", 
         "T2_DE_DESY"
     ], 
     "/DY3JetsToLL_M-50_scaledown_8TeV-madgraph/Summer12-START53_V7C-v1/AODSIM": [
-        "T2_FR_IPHC", 
         "T2_DE_DESY"
     ], 
     "/DY3JetsToLL_M-50_scaleup_8TeV-madgraph/Summer12-START53_V7C-v1/AODSIM": [
-        "T2_FR_IPHC", 
         "T2_DE_DESY"
     ], 
     "/DYJetsToLL_M-50_matchingdown_8TeV-madgraph/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
         "T2_UK_SGrid_RALPP", 
+        "T2_US_Nebraska"
+    ], 
+    "/HeavyGluonToTT_axial_M-2000_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T2_US_Nebraska"
+    ], 
+    "/HeavyGluonToTT_axial_M-200_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T2_US_Nebraska"
+    ], 
+    "/HeavyGluonToTT_left_M-200_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T2_US_Nebraska"
+    ], 
+    "/HeavyGluonToTT_right_M-2000_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T2_US_Nebraska"
+    ], 
+    "/HeavyGluonToTT_right_M-200_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
         "T2_US_Nebraska"
     ], 
     "/QCD_Pt-30to80_EMEnriched_TuneZ2_7TeV-pythia/Fall11-PU_S6_START44_V9B-v1/AODSIM": [
@@ -291,14 +300,26 @@
     "/TTJets_MSDecays_mass173_5_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
         "T2_FR_IPHC"
     ], 
+    "/TTJets_MSDecays_mass175_5_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T2_US_Nebraska"
+    ], 
+    "/TTJets_MSDecays_mass178_5_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T2_BE_IIHE"
+    ], 
     "/TTJets_MSDecays_matchingdown_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
         "T2_ES_IFCA"
     ], 
     "/TTJets_MSDecays_matchingdown_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V19-v2/AODSIM": [
         "T2_US_Nebraska"
     ], 
+    "/TTJets_MSDecays_matchingup_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T2_UK_SGrid_RALPP"
+    ], 
     "/TTJets_MSDecays_scaledown_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
         "T2_ES_IFCA"
+    ], 
+    "/TTJets_MSDecays_scaleup_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T2_FR_IPHC"
     ], 
     "/TTJets_MassiveBinDECAY_TuneZ2star_8TeV-madgraph-tauola/Summer12-START53_V7C_FSIM-v1/AODSIM": [
         "T2_FR_IPHC", 
@@ -393,22 +414,18 @@
         "T2_UK_SGrid_RALPP"
     ], 
     "/TTJets_mass161_5_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
-        "T2_UK_SGrid_RALPP", 
         "T2_BE_IIHE"
     ], 
     "/TTJets_mass163_5_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
-        "T2_FR_IPHC", 
         "T2_DE_DESY"
     ], 
     "/TTJets_mass166_5_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
         "T2_BE_IIHE"
     ], 
     "/TTJets_mass169_5_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
-        "T2_FR_IPHC", 
         "T2_DE_DESY"
     ], 
     "/TTJets_mass175_5_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
-        "T2_FR_IPHC", 
         "T2_DE_DESY"
     ], 
     "/TTJets_mass178_5_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
@@ -416,11 +433,9 @@
         "T2_US_Nebraska"
     ], 
     "/TTJets_mass181_5_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
-        "T2_FR_IPHC", 
         "T2_DE_DESY"
     ], 
     "/TTJets_mass184_5_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
-        "T2_UK_SGrid_RALPP", 
         "T2_BE_IIHE"
     ], 
     "/TTJets_matchingdown_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
@@ -462,6 +477,24 @@
     "/TT_SemiLept_nogg_CT10_TuneZ2star_8TeV-powheg/Summer12_DR53X-PU_S10_START53_V19-v2/AODSIM": [
         "T2_US_Nebraska"
     ], 
+    "/TT_Tune4C_13TeV-pythia8-tauola/Fall13dr-tsg_PU20bx25_POSTLS162_V2-v1/AODSIM": [
+        "T2_UK_SGrid_RALPP"
+    ], 
+    "/TT_Tune4C_13TeV-pythia8-tauola/Fall13dr-tsg_PU20bx25_POSTLS162_V2-v1/GEN-SIM-RAW": [
+        "T2_UK_SGrid_RALPP"
+    ], 
+    "/TT_Tune4C_13TeV-pythia8-tauola/Fall13dr-tsg_PU40bx25_POSTLS162_V2-v1/AODSIM": [
+        "T2_UK_SGrid_RALPP"
+    ], 
+    "/TT_Tune4C_13TeV-pythia8-tauola/Fall13dr-tsg_PU40bx25_POSTLS162_V2-v1/GEN-SIM-RAW": [
+        "T2_UK_SGrid_RALPP"
+    ], 
+    "/TT_Tune4C_13TeV-pythia8-tauola/Fall13dr-tsg_PU40bx50_POSTLS162_V2-v1/AODSIM": [
+        "T2_UK_SGrid_RALPP"
+    ], 
+    "/TT_Tune4C_13TeV-pythia8-tauola/Fall13dr-tsg_PU40bx50_POSTLS162_V2-v1/GEN-SIM-RAW": [
+        "T2_UK_SGrid_RALPP"
+    ], 
     "/TT_TuneZ2_7TeV-mcatnlo/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
         "T2_DE_DESY"
     ], 
@@ -478,7 +511,6 @@
         "T2_UK_SGrid_RALPP"
     ], 
     "/TT_noCorr_8TeV-mcatnlo/Summer12_DR53X-PU_S10_START53_V7C-v1/AODSIM": [
-        "T2_BE_IIHE", 
         "T2_DE_DESY"
     ], 
     "/TT_scaledown_CT10_TuneZ2star_8TeV-powheg-tauola/Summer12-START53_V7C_FSIM-v1/AODSIM": [
@@ -581,9 +613,63 @@
         "T2_UK_SGrid_RALPP", 
         "T2_DE_DESY"
     ], 
+    "/TToBLNu_s-channel-EMu_Tune4C_13TeV-madgraph-tauola/Fall13dr-tsg_PU20bx25_POSTLS162_V2-v1/AODSIM": [
+        "T2_UK_SGrid_RALPP"
+    ], 
+    "/TToBLNu_s-channel-EMu_Tune4C_13TeV-madgraph-tauola/Fall13dr-tsg_PU20bx25_POSTLS162_V2-v1/GEN-SIM-RAW": [
+        "T2_UK_SGrid_RALPP"
+    ], 
+    "/TToBLNu_s-channel-EMu_Tune4C_13TeV-madgraph-tauola/Fall13dr-tsg_PU40bx25_POSTLS162_V2-v1/AODSIM": [
+        "T2_UK_SGrid_RALPP"
+    ], 
+    "/TToBLNu_s-channel-EMu_Tune4C_13TeV-madgraph-tauola/Fall13dr-tsg_PU40bx25_POSTLS162_V2-v1/GEN-SIM-RAW": [
+        "T2_UK_SGrid_RALPP"
+    ], 
+    "/TToBLNu_s-channel-EMu_Tune4C_13TeV-madgraph-tauola/Fall13dr-tsg_PU40bx50_POSTLS162_V2-v1/AODSIM": [
+        "T2_UK_SGrid_RALPP"
+    ], 
+    "/TToBLNu_s-channel-EMu_Tune4C_13TeV-madgraph-tauola/Fall13dr-tsg_PU40bx50_POSTLS162_V2-v1/GEN-SIM-RAW": [
+        "T2_UK_SGrid_RALPP"
+    ], 
     "/TToBLNu_s-channel_TuneZ2star_8TeV-comphep/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
         "T2_UK_SGrid_RALPP", 
         "T2_DE_DESY"
+    ], 
+    "/TToBLNu_t-channel-EMu_Tune4C_13TeV-madgraph-tauola/Fall13dr-tsg_PU20bx25_POSTLS162_V2-v1/AODSIM": [
+        "T2_UK_SGrid_RALPP"
+    ], 
+    "/TToBLNu_t-channel-EMu_Tune4C_13TeV-madgraph-tauola/Fall13dr-tsg_PU20bx25_POSTLS162_V2-v1/GEN-SIM-RAW": [
+        "T2_UK_SGrid_RALPP"
+    ], 
+    "/TToBLNu_t-channel-EMu_Tune4C_13TeV-madgraph-tauola/Fall13dr-tsg_PU40bx25_POSTLS162_V2-v1/AODSIM": [
+        "T2_UK_SGrid_RALPP"
+    ], 
+    "/TToBLNu_t-channel-EMu_Tune4C_13TeV-madgraph-tauola/Fall13dr-tsg_PU40bx25_POSTLS162_V2-v1/GEN-SIM-RAW": [
+        "T2_UK_SGrid_RALPP"
+    ], 
+    "/TToBLNu_t-channel-EMu_Tune4C_13TeV-madgraph-tauola/Fall13dr-tsg_PU40bx50_POSTLS162_V2-v1/AODSIM": [
+        "T2_UK_SGrid_RALPP"
+    ], 
+    "/TToBLNu_t-channel-EMu_Tune4C_13TeV-madgraph-tauola/Fall13dr-tsg_PU40bx50_POSTLS162_V2-v1/GEN-SIM-RAW": [
+        "T2_UK_SGrid_RALPP"
+    ], 
+    "/TToBLNu_tW-channel-DR-EMu_Tune4C_13TeV-madgraph-tauola/Fall13dr-tsg_PU20bx25_POSTLS162_V2-v1/AODSIM": [
+        "T2_UK_SGrid_RALPP"
+    ], 
+    "/TToBLNu_tW-channel-DR-EMu_Tune4C_13TeV-madgraph-tauola/Fall13dr-tsg_PU20bx25_POSTLS162_V2-v1/GEN-SIM-RAW": [
+        "T2_UK_SGrid_RALPP"
+    ], 
+    "/TToBLNu_tW-channel-DR-EMu_Tune4C_13TeV-madgraph-tauola/Fall13dr-tsg_PU40bx25_POSTLS162_V2-v1/AODSIM": [
+        "T2_UK_SGrid_RALPP"
+    ], 
+    "/TToBLNu_tW-channel-DR-EMu_Tune4C_13TeV-madgraph-tauola/Fall13dr-tsg_PU40bx25_POSTLS162_V2-v1/GEN-SIM-RAW": [
+        "T2_UK_SGrid_RALPP"
+    ], 
+    "/TToBLNu_tW-channel-DR-EMu_Tune4C_13TeV-madgraph-tauola/Fall13dr-tsg_PU40bx50_POSTLS162_V2-v1/AODSIM": [
+        "T2_UK_SGrid_RALPP"
+    ], 
+    "/TToBLNu_tW-channel-DR-EMu_Tune4C_13TeV-madgraph-tauola/Fall13dr-tsg_PU40bx50_POSTLS162_V2-v1/GEN-SIM-RAW": [
+        "T2_UK_SGrid_RALPP"
     ], 
     "/TToBMuNu_TuneZ2_t-channel_7TeV-comphep/Fall11-PU_S6_START44_V9B-v1/AODSIM": [
         "T2_ES_IFCA"
@@ -752,68 +838,11 @@
     "/TZJetsTo3LNuB_scaleup_8TeV_TuneZ2Star_madgraph_tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
         "T2_FR_IPHC"
     ], 
-    "/T_TuneZ2_Dec_Vtd_t-channel_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_BE_IIHE"
-    ], 
-    "/T_TuneZ2_Dec_Vts_t-channel_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_DE_DESY"
-    ], 
-    "/T_TuneZ2_Prod_Vtd_t-channel_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_DE_DESY"
-    ], 
-    "/T_TuneZ2_Prod_Vts_t-channel_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_DE_DESY"
-    ], 
-    "/T_TuneZ2_mass166_5_t-channel_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_UK_SGrid_RALPP"
-    ], 
-    "/T_TuneZ2_mass166_5_t-channel_7TeV-powheg-tauola/Summer11-PU_S4_START42_V11-v1/AODSIM": [
-        "T2_UK_SGrid_RALPP"
-    ], 
-    "/T_TuneZ2_mass166_5_tW-channel_DR_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_DE_DESY"
-    ], 
-    "/T_TuneZ2_mass166_5_tW-channel_DR_7TeV-powheg-tauola/Summer11-PU_S4_START42_V11-v1/AODSIM": [
-        "T2_UK_SGrid_RALPP"
-    ], 
-    "/T_TuneZ2_mass178_5_s-channel_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_DE_DESY"
-    ], 
-    "/T_TuneZ2_mass178_5_t-channel_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_DE_DESY"
-    ], 
-    "/T_TuneZ2_mass178_5_t-channel_7TeV-powheg-tauola/Summer11-PU_S4_START42_V11-v1/AODSIM": [
-        "T2_UK_SGrid_RALPP"
-    ], 
-    "/T_TuneZ2_mass178_5_tW-channel_DR_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_DE_DESY"
-    ], 
-    "/T_TuneZ2_mass178_5_tW-channel_DR_7TeV-powheg-tauola/Summer11-PU_S4_START42_V11-v1/AODSIM": [
-        "T2_UK_SGrid_RALPP"
-    ], 
-    "/T_TuneZ2_mass178_5_tW-channel_DS_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_BE_IIHE"
-    ], 
     "/T_TuneZ2_s-channel_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
         "T2_UK_SGrid_RALPP"
     ], 
     "/T_TuneZ2_s-channel_7TeV-powheg-tauola/Fall11-PU_S6_START44_V9B-v1/AODSIM": [], 
     "/T_TuneZ2_s-channel_7TeV-powheg-tauola/Summer11-PU_S4_START42_V11-v1/AODSIM": [], 
-    "/T_TuneZ2_scaledown_s-channel_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_DE_DESY"
-    ], 
-    "/T_TuneZ2_scaledown_tW-channel-DR_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_DE_DESY"
-    ], 
-    "/T_TuneZ2_scaleup_s-channel_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_DE_DESY"
-    ], 
-    "/T_TuneZ2_scaleup_tW-channel-DR_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_DE_DESY"
-    ], 
-    "/T_TuneZ2_scaleup_tW-channel-DS_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_UK_SGrid_RALPP"
-    ], 
     "/T_TuneZ2_t-channel_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
         "T2_UK_SGrid_RALPP"
     ], 
@@ -843,57 +872,15 @@
         "T2_US_Nebraska", 
         "T2_BE_IIHE"
     ], 
-    "/Tbar_TuneZ2_Dec_Vtd_t-channel_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_DE_DESY"
-    ], 
-    "/Tbar_TuneZ2_Dec_Vts_t-channel_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_DE_DESY"
-    ], 
-    "/Tbar_TuneZ2_Prod_Vtd_t-channel_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_DE_DESY"
-    ], 
-    "/Tbar_TuneZ2_Prod_Vts_t-channel_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_DE_DESY"
-    ], 
-    "/Tbar_TuneZ2_mass166_5_s-channel_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_DE_DESY"
-    ], 
-    "/Tbar_TuneZ2_mass166_5_t-channel_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_DE_DESY"
-    ], 
-    "/Tbar_TuneZ2_mass178_5_s-channel_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_DE_DESY"
-    ], 
     "/Tbar_TuneZ2_s-channel_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
         "T2_UK_SGrid_RALPP"
     ], 
     "/Tbar_TuneZ2_s-channel_7TeV-powheg-tauola/Fall11-PU_S6_START44_V9B-v1/AODSIM": [], 
-    "/Tbar_TuneZ2_scaledown_s-channel_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_UK_SGrid_RALPP"
-    ], 
-    "/Tbar_TuneZ2_scaledown_t-channel_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_DE_DESY"
-    ], 
     "/Tbar_TuneZ2_scaledown_t-channel_7TeV-powheg-tauola/Fall11-PU_S6_START44_V9B-v1/AODSIM": [
         "T2_BE_IIHE"
     ], 
-    "/Tbar_TuneZ2_scaledown_tW-channel-DR_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_DE_DESY"
-    ], 
-    "/Tbar_TuneZ2_scaledown_tW-channel-DS_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_UK_SGrid_RALPP"
-    ], 
-    "/Tbar_TuneZ2_scaleup_s-channel_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_DE_DESY"
-    ], 
-    "/Tbar_TuneZ2_scaleup_t-channel_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_DE_DESY"
-    ], 
     "/Tbar_TuneZ2_scaleup_t-channel_7TeV-powheg-tauola/Fall11-PU_S6_START44_V9B-v1/AODSIM": [
         "T2_BE_IIHE"
-    ], 
-    "/Tbar_TuneZ2_scaleup_tW-channel-DR_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_DE_DESY"
     ], 
     "/Tbar_TuneZ2_t-channel_7TeV-powheg-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
         "T2_UK_SGrid_RALPP"
@@ -917,9 +904,6 @@
     ], 
     "/VQQ-madgraph/Summer08_IDEAL_V11_redigi_v2/GEN-SIM-RECO": [
         "T2_BE_IIHE"
-    ], 
-    "/W1Jet_TuneZ2_7TeV-madgraph-tauola/Summer11-PU_S4_START42_V11-v1/AODSIM": [
-        "T2_UK_SGrid_RALPP"
     ], 
     "/W1JetsToLNu_TuneZ2Star_8TeV-madgraph/Summer12-START53_V7C_FSIM-v1/AODSIM": [
         "T2_ES_IFCA"
@@ -966,14 +950,8 @@
     "/W3JetsToLNu_scaleup_8TeV-madgraph/Summer12-START53_V7C_FSIM-v4/AODSIM": [
         "T2_BE_IIHE"
     ], 
-    "/W3Jets_TuneZ2_7TeV-madgraph-tauola/Fall11-PU_S6_START42_V14B-v2/AODSIM": [
-        "T2_BE_IIHE"
-    ], 
     "/W3Jets_TuneZ2_7TeV-madgraph-tauola/Fall11-PU_S6_START44_V9B-v2/AODSIM": [
         "T2_FR_IPHC"
-    ], 
-    "/W3Jets_TuneZ2_7TeV-madgraph-tauola/Summer11-PU_S4_START42_V11-v1/AODSIM": [
-        "T2_UK_SGrid_RALPP"
     ], 
     "/W4JetsToLNu_TuneZ2Star_8TeV-madgraph/Summer12-START53_V7C_FSIM-v1/AODSIM": [
         "T2_ES_IFCA"
@@ -990,19 +968,10 @@
     "/W4JetsToLNu_scaleup_8TeV-madgraph/Summer12-START53_V7C_FSIM-v4/AODSIM": [
         "T2_ES_IFCA"
     ], 
-    "/W4Jets_TuneZ2_7TeV-madgraph-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_BE_IIHE"
-    ], 
-    "/W4Jets_TuneZ2_7TeV-madgraph-tauola/Summer11-PU_S4_START42_V11-v1/AODSIM": [
-        "T2_UK_SGrid_RALPP"
-    ], 
     "/WJetsToLNu_TuneZ2_matchingdown_7TeV-madgraph-tauola/Fall11-PU_S6_START44_V9B-v1/AODSIM": [
         "T2_BE_IIHE"
     ], 
     "/WJetsToLNu_TuneZ2_matchingup_7TeV-madgraph-tauola/Fall11-PU_S6_START44_V9B-v1/AODSIM": [
-        "T2_BE_IIHE"
-    ], 
-    "/WJetsToLNu_TuneZ2_scaledown_7TeV-madgraph-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
         "T2_BE_IIHE"
     ], 
     "/WJetsToLNu_TuneZ2_scaledown_7TeV-madgraph-tauola/Fall11-PU_S6_START44_V9B-v1/AODSIM": [
@@ -1010,9 +979,6 @@
     ], 
     "/WJetsToLNu_TuneZ2_scaleup_7TeV-madgraph-tauola/Fall11-PU_S6_START44_V9B-v1/AODSIM": [
         "T2_BE_IIHE"
-    ], 
-    "/WJetsToLNu_TuneZ2_scaleup_7TeV-madgraph-tauola/Summer11-PU_S4_START42_V11-v1/AODSIM": [
-        "T2_UK_SGrid_RALPP"
     ], 
     "/WJetsToLNu_matchingup_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM": [
         "T2_US_Nebraska", 
@@ -1023,20 +989,20 @@
         "T2_DE_DESY"
     ], 
     "/WWJetsTo2L2Nu_TuneZ2_7TeV-madgraph-tauola/Fall11-PU_S6_START44_V9B-v1/AODSIM": [], 
+    "/WZJetsTo3LNu_8TeV_TuneZ2Star_madgraph_tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T2_FR_IPHC"
+    ], 
+    "/WZJetsTo3LNu_matchingup_8TeV_TuneZ2Star_madgraph_tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T2_FR_IPHC"
+    ], 
     "/WbbToLNu_TuneZ2_7TeV-madgraph-pythia6-tauola/Fall11-PU_S6_START44_V9B-v1/AODSIM": [
         "T2_BE_IIHE"
     ], 
     "/ZJets-madgraph/Summer08_IDEAL_V11_redigi_v1/GEN-SIM-RECO": [
         "T2_BE_IIHE"
     ], 
-    "/ZJetsToLL_TuneZ2_matchingup_7TeV-madgraph-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_UK_SGrid_RALPP"
-    ], 
-    "/ZJetsToLL_TuneZ2_scaledown_7TeV-madgraph-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_DE_DESY"
-    ], 
-    "/ZJetsToLL_TuneZ2_scaleup_7TeV-madgraph-tauola/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
-        "T2_UK_SGrid_RALPP"
+    "/ZprimeTtoTTU_M-220_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AODSIM": [
+        "T2_US_Nebraska"
     ], 
     "/Zprime_M2000GeV_W20GeV-madgraph/Fall11-PU_S6_START42_V14B-v1/AODSIM": [
         "T2_DE_DESY"
