@@ -1,4 +1,5 @@
 # write something to the console
-echo "Hello CRAB!"
+#echo "Hello CRAB!"
 # create a dummy file
-touch testing.root
+#touch testing.root
+python run_py $@

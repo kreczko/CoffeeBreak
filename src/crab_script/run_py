@@ -10,6 +10,7 @@ def touch(fname, times=None):
         fhandle.close()
         
 print 'Hello CRAB!'
+job_number = sys.argv[1]
 print sys.argv
 
 touch('testing.root')
