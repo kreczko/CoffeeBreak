@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+import os
+import sys
+
+def touch(fname, times=None):
+    fhandle = open(fname, 'a')
+    try:
+        os.utime(fname, times)
+    finally:
+        fhandle.close()
+        
+print 'Hello CRAB!'
+print sys.argv
+
+touch('testing.root')
