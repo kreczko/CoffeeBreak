@@ -5,8 +5,8 @@ from time import sleep
 
 JSON_output_file = 'files/dataset_locations.json'
 dataset_output_file = 'files/datasets.txt'
-TOP_T2_SITES = ['T2_DE_DESY', 'T2_BE_IIHE', 'T2_ES_IFCA', 'T2_FR_IPHC', 'T2_UK_SGrid_RALPP', 'T2_US_Nebraska']
-
+#TOP_T2_SITES = ['T2_DE_DESY', 'T2_BE_IIHE', 'T2_ES_IFCA', 'T2_FR_IPHC', 'T2_UK_SGrid_RALPP', 'T2_US_Nebraska']
+TOP_T2_SITES = ['T2_UK_SGrid_Bristol']
 # https://cmsweb.cern.ch/phedex/datasvc/json/prod/subscriptions?create_since=0&group=top&node=T2_DE_DESY&node=T2_BE_IIHE&node=T2_ES_IFCA&node=T2_FR_IPHC&node=T2_UK_SGrid_RALPP&node=T2_US_Nebraska
 def ask_das(query):
     command = './src/das_client.py --query="%s" --format=json' % query
@@ -133,7 +133,8 @@ def main(input_file='files/test_datasets.txt'):
 #from DAS
 # method = 'DAS'
 #from phedex
-method = 'phedex'
+method = 'DAS'
+group = 'local'
 T2_duplicates = []
 add_duplicate = T2_duplicates.append
 if method == 'DAS':
@@ -146,7 +147,7 @@ if method == 'DAS':
     
     
 if method == 'phedex':
-    datasets_and_locations = get_datasets_from_phedex(group = 'top', sites = TOP_T2_SITES)
+    datasets_and_locations = get_datasets_from_phedex(group = group, sites = TOP_T2_SITES)
     for dataset, sites in datasets_and_locations.iteritems():
         if len(sites) > 1:
             add_duplicate(dataset)
