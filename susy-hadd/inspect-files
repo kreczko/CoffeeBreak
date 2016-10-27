@@ -15,12 +15,15 @@ from time_function import time_function
 @time_function('main')
 def main(files):
     paths, objects = get_paths_and_objects(files)
-    unique_path_fraction, common_paths = calculate_unique_fraction(paths)
-    unique_object_fraction, common_objects = calculate_unique_fraction(objects)
+    summary = calculate_unique_fraction(paths)
     print()
-    print('Unique path fraction: {:.2f} %'.format(unique_path_fraction))
-    print('Unique object faction: {:.2f} %'.format(unique_object_fraction))
+    print('Summary paths')
+    print('Total # of paths', summary['n_things'])
+    print('Common # of paths', summary['n_common_things'])
+    print('Unique # of paths', summary['n_unique_things'])
+    print('Unique path fraction: {:.2f} %'.format(summary['unique_fraction']))
     print()
+    common_paths = summary['common_things']
     if common_paths:
         print("Common paths:")
         all_files = set(files)
@@ -32,11 +35,15 @@ def main(files):
                 in_files = ','.join(in_files)
             print('    ', p, 'in files:', in_files)
         print()
-    if common_objects and DEBUG:
-        print("Common objects:")
-        for o in common_objects:
-            print('    ', o)
-        print()
+
+    summary = calculate_unique_fraction(objects)
+    print()
+    print('Summary objects')
+    print('Total # of objects', summary['n_things'])
+    print('Common # of objects', summary['n_common_things'])
+    print('Unique # of objects', summary['n_unique_things'])
+    print('Unique objects fraction: {:.2f} %'.format(summary['unique_fraction']))
+    print()
 
 @time_function('get_paths_and_objects')
 def get_paths_and_objects(files):
@@ -67,20 +74,33 @@ def calculate_unique_fraction(things):
     '''
     from itertools import chain
     import collections
+    summary = {
+        'unique_fraction': 0,
+        'n_unique_things': 0,
+        'n_things': 0,
+        'n_common_things': 0,
+        'common_things': [],
+    }
 
     if len(things.keys())==1:
-        return 100, things
+        summary['unique_fraction'] = 100
+        summary['common_things'] = things
+        return summary
 
     all_things = list(chain(*things.values()))
     unique_things = set(all_things)
-    common_things = [item for item, count in collections.Counter(all_things).items() if count > 1]
     n_unique_things = len(unique_things)
     n_things = len(all_things)
     n_common_things = n_things - n_unique_things
 
     if n_things > 0:
-        return 100*(n_common_things/n_things), common_things
-    return 0, things
+        summary['unique_fraction'] = 100*(n_common_things/n_things)
+
+    summary['n_common_things'] = n_common_things
+    summary['n_things'] = n_things
+    summary['n_unique_things'] = n_unique_things
+    summary['common_things'] = [item for item, count in collections.Counter(all_things).items() if count > 1]
+    return summary
 
 
 if __name__ == '__main__':
