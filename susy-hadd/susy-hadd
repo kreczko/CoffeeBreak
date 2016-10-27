@@ -1,0 +1,45 @@
+#!/usr/bin/env python
+from __future__ import print_function, division
+from time_function import time_function
+
+import os
+import ROOT
+from rootpy.io import root_open
+from rootpy.io import MemFile
+from collections import Counter
+from functools import partial
+
+VERBOSE=os.environ.get('VERBOSE', False)
+
+@time_function('main')
+def main(files, destination):
+    merge(files, destination)
+
+@time_function('merge')
+def merge(files, destination):
+
+    with root_open(destination, 'RECREATE') as output_file:
+    # with MemFile() as output_file:
+        mapfunc = partial(copy_file, output_file = output_file)
+        map(mapfunc, files)
+
+
+def copy_file(file_name, output_file):
+    with root_open(file_name) as f:
+        if VERBOSE: print('Opened file', file_name)
+        for path, _, _ in f.walk():
+            # only copy the first set of directories
+            if path == '' or Counter(path)['/'] > 0:
+                continue
+            if VERBOSE: print('Copying path', path)
+
+            f.copytree(dest_dir = output_file, src = path)
+
+    if VERBOSE: print('Closed file', file_name)
+
+if __name__ == '__main__':
+    import sys
+    print('This script is only meant to be used for files that do not have any common objects (see inspect-files)')
+    destination = sys.argv[1]
+    files = sys.argv[2:]
+    main(files, destination)

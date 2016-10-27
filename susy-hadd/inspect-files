@@ -1,0 +1,90 @@
+#!/usr/bin/env python
+from __future__ import print_function, division
+'''
+test how much the files have in common
+tests two approaches:
+ 1) include common parent directories (Unique path fraction) excluding /
+ 2) count unique end-path object (what actually gets merged)
+'''
+import os
+
+DEBUG=os.environ.get('DEBUG', False)
+
+from time_function import time_function
+
+@time_function('main')
+def main(files):
+    paths, objects = get_paths_and_objects(files)
+    unique_path_fraction, common_paths = calculate_unique_fraction(paths)
+    unique_object_fraction, common_objects = calculate_unique_fraction(objects)
+    print()
+    print('Unique path fraction: {:.2f} %'.format(unique_path_fraction))
+    print('Unique object faction: {:.2f} %'.format(unique_object_fraction))
+    print()
+    if common_paths:
+        print("Common paths:")
+        all_files = set(files)
+        for p in common_paths:
+            in_files = set([f for f,f_paths in paths.iteritems() if p in f_paths])
+            if in_files == all_files:
+                in_files = 'all'
+            else:
+                in_files = ','.join(in_files)
+            print('    ', p, 'in files:', in_files)
+        print()
+    if common_objects and DEBUG:
+        print("Common objects:")
+        for o in common_objects:
+            print('    ', o)
+        print()
+
+@time_function('get_paths_and_objects')
+def get_paths_and_objects(files):
+    from rootpy.io import root_open
+    paths = {}
+    f_objects = {}
+
+    for file_name in files:
+        paths[file_name] = []
+        f_objects[file_name] = []
+        add_path = paths[file_name].append
+        add_objects = f_objects[file_name].append
+        with root_open(file_name) as f:
+            if DEBUG: print('Opened file', file_name)
+            for path, dirs, objects in f.walk():
+                if not path == '':
+                    add_path(path)
+                for o in objects:
+                    add_objects('{0}/{1}'.format(path, o))
+                #print(path, dirs, objects)
+        if DEBUG: print('Closed file', file_name)
+    return paths, f_objects
+
+@time_function('calculate_unique_fraction')
+def calculate_unique_fraction(things):
+    '''
+        Returns the fraction of unique things
+    '''
+    from itertools import chain
+    import collections
+
+    if len(things.keys())==1:
+        return 100, things
+
+    all_things = list(chain(*things.values()))
+    unique_things = set(all_things)
+    common_things = [item for item, count in collections.Counter(all_things).items() if count > 1]
+    n_unique_things = len(unique_things)
+    n_things = len(all_things)
+    n_common_things = n_things - n_unique_things
+
+    if n_things > 0:
+        return 100*(n_common_things/n_things), common_things
+    return 0, things
+
+
+if __name__ == '__main__':
+    import sys
+
+    files = sys.argv[1:]
+    main(files)
